@@ -24,6 +24,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <style>
       body {
         font-family: EB Garamond, serif;
@@ -76,9 +81,22 @@
 
   <body>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand pl-xl-4" href="">Zaratan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link disabled" href="#">Houses</a>
+          <a class="nav-item nav-link disabled" href="#">Apply</a>
+        </div>
+      </div>
+    </nav>
+
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-sm-4 order-2 order-sm-1 p-4 p-lg-5 red">
+        <div class="col-lg-4 order-2 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
           <h5>Zaratan is a boutique coliving owner-operator with roots in California's cooperative movement.</h5>
 
           <br/>
@@ -97,7 +115,7 @@
           <br/>
         </div>
 
-        <div class="col-sm-4 order-1 order-sm-2 p-3 green">
+        <div class="col-lg-4 order-1 order-lg-2 p-xl-3 green">
           <h1 class="center logo" style="font-size:100px"><strong>zaratan</strong></h1>
           <h1 class="center" style="font-size:100px">&#x1F422;</h1>
           <p class="center" style="font-size:30px">
@@ -134,10 +152,10 @@
           </br>
         </div>
 
-        <div class="col-sm-4 order-3 order-sm-3 p-4 p-lg-5 blue">
+        <div class="col-lg-4 order-3 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
           <a href="https://en.wikipedia.org/wiki/Zaratan">
             <!-- Image Source: https://manmythmagic.blogspot.com/2015/03/creation-mythology-native-america-north.html -->
-            <img class="img-fluid img-thumbnail" src="assets/zaratan-art.jpg" alt="A Zaratan at night">
+            <img class="img-fluid img-thumbnail" src="assets/zaratan-art.jpg" alt="A Zaratan at night" style="margin:auto;display:block;">
           </a>
         </div>
       </div>
