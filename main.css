@@ -4,6 +4,9 @@ body {
 
 .center {
   text-align: center;
+}
+
+.spaced {
   letter-spacing: 3px;
 }
 
