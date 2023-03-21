@@ -1,7 +1,4 @@
-assets/
-favicon_io/
-favicon.ico
-houses/photos/
+public/
 
 # Fluff
 .DS_Store
