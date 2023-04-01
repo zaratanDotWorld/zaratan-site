@@ -1,9 +1,9 @@
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import Image from 'next/image';
 
-import sage1 from "../../public/images/houses/sage/front.jpg";
-import sage2 from "../../public/images/houses/sage/living.jpg";
-import sage3 from "../../public/images/houses/sage/halloween.jpg";
+// import sage1 from "../../public/images/houses/sage/front.jpg";
+// import sage2 from "../../public/images/houses/sage/living.jpg";
+// import sage3 from "../../public/images/houses/sage/halloween.jpg";
 
 export default function () {
   return (
@@ -71,9 +71,9 @@ export default function () {
         </Col>
         <Col className="col-lg-4 order-3 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
         <Carousel>
-          <Carousel.Item><Image className="img-thumbnail d-block w-100" src={sage1} /></Carousel.Item>
-          <Carousel.Item><Image className="img-thumbnail d-block w-100" src={sage2} /></Carousel.Item>
-          <Carousel.Item><Image className="img-thumbnail d-block w-100" src={sage3} /></Carousel.Item>
+          {/* <Carousel.Item><Image className="img-thumbnail d-block w-100" src={sage1} /></Carousel.Item> */}
+          {/* <Carousel.Item><Image className="img-thumbnail d-block w-100" src={sage2} /></Carousel.Item> */}
+          {/* <Carousel.Item><Image className="img-thumbnail d-block w-100" src={sage3} /></Carousel.Item> */}
         </Carousel>
         </Col>
       </Row>
