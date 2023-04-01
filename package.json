@@ -1,0 +1,23 @@
+{
+  "name": "site",
+  "version": "0.1.0",
+  "description": "Zaratan website",
+  "repository": "github@kronosapiens/zaratan-site",
+  "author": "Daniel Kronovet (krono@zaratan.world)",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/kronosapiens/zaratan-site#readme",
+  "bugs": "https://github.com/kronosapiens/zaratan-site/issues",
+  "main": "pages/index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0"
+  }
+}
