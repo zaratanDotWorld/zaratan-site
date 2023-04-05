@@ -1,11 +1,28 @@
-import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import { S3 } from "@aws-sdk/client-s3";
+
+import { Container, Row, Col, Carousel, Table } from 'react-bootstrap';
 import Image from 'next/image';
 
-// import sage1 from "../../public/images/houses/sage/front.jpg";
-// import sage2 from "../../public/images/houses/sage/living.jpg";
-// import sage3 from "../../public/images/houses/sage/halloween.jpg";
+export async function getStaticProps() {
+  const s3 = new S3({
+    region: "us-east-1",
+    credentials: {
+      accessKeyId: process.env.ACCESS_KEY_ID,
+      secretAccessKey: process.env.SECRET_ACCESS_KEY
+    }});
 
-export default function () {
+    const { Contents } = await s3.listObjects({ Bucket: "zaratan.world" });
+    const imageRoot = "https://s3.amazonaws.com/zaratan.world/"
+    const regex = /public\/images\/sage\/.*\.JPG/i;
+
+    const carouselImages = Contents
+      .filter(item => regex.test(item.Key))
+      .map(item => imageRoot + item.Key)
+
+  return { props: { carouselImages } }
+}
+
+export default function ({ carouselImages }) {
   return (
     <Container fluid>
       <Row>
@@ -16,64 +33,54 @@ export default function () {
           <br></br>
 
           <p>
-            A gorgeous ten-bedroom craftsman in the heart of vibrant Highland Park.
-            Built in 1905 and recently renovated, this home features a
-            restaurant-style kitchen, wood-paneled dining room, sunny living room, quiet library,
-            second-floor deck, front vegetable garden, large backyard, and four full bathrooms.
+            Come live in a gorgeous 1905 Craftsman in the heart of vibrant Highland Park, Los Angeles.
+          </p>
+          <p>
+            Recently renovated, this nine-bedroom home features a
+            restaurant-style kitchen,
+            wainscotted dining room,
+            sunny living room,
+            quiet library,
+            second-floor deck,
+            large backyard with fire pit,
+            guest room,
+            and four full bathrooms.
           </p>
 
           <p className="center spaced rainbow-text-animated" style={{fontSize: "32px"}}>Now Open!</p>
         </Col>
         <Col className="col-lg-4 order-2 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
-          <table className="table center">
+          <Table className="table center">
             <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">Sage</th>
-                <th scope="col">Craiglist</th>
-              </tr>
+              <tr><th></th><th>Sage</th><th>Craiglist</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">Rent</th>
-                <td>$1100*</td>
-                <td>$1050</td>
-              </tr>
-              <tr>
-                <th scope="row">Utilities</th>
-                <td>Included</td>
-                <td>$60</td>
-              </tr>
-              <tr>
-                <th scope="row">Supplies</th>
-                <td>Included</td>
-                <td>$40</td>
-              </tr>
-              <tr>
-                <th scope="row">Food Staples</th>
-                <td>Included</td>
-                <td>$60</td>
-              </tr>
-              <tr>
-                <th scope="row">Internet</th>
-                <td>Included</td>
-                <td>$40</td>
-              </tr>
-              <tr>
-                <th scope="row">Total</th>
-                <td>$1100</td>
-                <td>$1250</td>
-              </tr>
+              <tr><th>Rent</th><td>$1,150*</td><td>$950</td></tr>
+              <tr><th>Utilities</th><td>Included</td><td>$80</td></tr>
+              <tr><th>Supplies</th><td>Included</td><td>$60</td></tr>
+              <tr><th>Food Staples</th><td>Included</td><td>$70</td></tr>
+              <tr><th>Internet</th><td>Included</td><td>$40</td></tr>
+              <tr><th>Total</th><td style={{backgroundColor: "#00ff7f33"}}>$1,150</td><td>$1,200</td></tr>
             </tbody>
-          </table>
+          </Table>
 
           <p className="center">*Pricing varies by room</p>
         </Col>
         <Col className="col-lg-4 order-3 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
-        <Carousel>
-          {/* <Carousel.Item><Image className="img-thumbnail d-block w-100" src={sage1} /></Carousel.Item> */}
-          {/* <Carousel.Item><Image className="img-thumbnail d-block w-100" src={sage2} /></Carousel.Item> */}
-          {/* <Carousel.Item><Image className="img-thumbnail d-block w-100" src={sage3} /></Carousel.Item> */}
+        <Carousel interval={3600}>
+          {
+            carouselImages.map((imageUri, i) =>
+              <Carousel.Item key={i}>
+                <Image
+                  className="img-thumbnail d-block w-100"
+                  src={imageUri}
+                  alt={imageUri}
+                  width={200}
+                  height={265}
+                />
+              </Carousel.Item>
+            )
+          }
         </Carousel>
         </Col>
       </Row>

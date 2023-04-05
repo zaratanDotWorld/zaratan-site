@@ -12,7 +12,8 @@ export default function () {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <NavDropdown title="Houses" id="basic-nav-dropdown">
-            <NavDropdown.Item href="houses/sage">Highland Park &#x2013; Sage &#x1F331;</NavDropdown.Item>
+            <NavDropdown.Header>Highland Park</NavDropdown.Header>
+            <NavDropdown.Item href="houses/sage">Sage House &#x1F331;</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href={applyUrl}><b>Apply</b></Nav.Link>
         </Nav>
