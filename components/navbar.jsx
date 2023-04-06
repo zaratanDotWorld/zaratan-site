@@ -14,7 +14,7 @@ export default function () {
           <Nav.Link href="/mirror">Mirror</Nav.Link>
           <NavDropdown title="Houses" id="basic-nav-dropdown">
             <NavDropdown.Header>Highland Park</NavDropdown.Header>
-            <NavDropdown.Item href="houses/sage">Sage House &#x1F331;</NavDropdown.Item>
+            <NavDropdown.Item href="/houses/sage">Sage House &#x1F331;</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href={applyUrl}><b>Apply</b></Nav.Link>
         </Nav>
