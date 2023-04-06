@@ -59,7 +59,7 @@ export default function () {
 
           <p>
             We're looking for people who are <b>kind, creative, and playful</b>. We keep prices reasonable, and in return ask members to help with chores &#x2013; we don't have managers or servants.
-            Meetings can be boring, so we've <a className="text-reset" href="https://github.com/kronosapiens/mirror"><u>developed tools</u></a> to make running a house as easy as playing a game.
+            Meetings can be boring, so we've <a className="text-reset" href="/mirror"><u>developed tools</u></a> to make running a house as easy as playing a game.
             If you take the responsibility, this will be one of the best experiences of your life.
           </p>
         </Col>

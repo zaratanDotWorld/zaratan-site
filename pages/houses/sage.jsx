@@ -15,14 +15,14 @@ export async function getStaticProps() {
     const imageRoot = "https://s3.amazonaws.com/zaratan.world/"
     const regex = /public\/images\/sage\/.*\.JPG/i;
 
-    const carouselImages = Contents
+    const images = Contents
       .filter(item => regex.test(item.Key))
       .map(item => imageRoot + item.Key)
 
-  return { props: { carouselImages } }
+  return { props: { images } }
 }
 
-export default function ({ carouselImages }) {
+export default function ({ images }) {
   return (
     <Container fluid>
       <Row>
@@ -67,21 +67,21 @@ export default function ({ carouselImages }) {
           <p className="center">*Pricing varies by room</p>
         </Col>
         <Col className="col-lg-4 order-3 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
-        <Carousel interval={3600}>
-          {
-            carouselImages.map((imageUri, i) =>
-              <Carousel.Item key={i}>
-                <Image
-                  className="img-thumbnail d-block w-100"
-                  src={imageUri}
-                  alt={imageUri}
-                  width={200}
-                  height={265}
-                />
-              </Carousel.Item>
-            )
-          }
-        </Carousel>
+          <Carousel interval={3600}>
+            {
+              images.map((imageUri, i) =>
+                <Carousel.Item key={i}>
+                  <Image
+                    className="img-thumbnail d-block w-100"
+                    src={imageUri}
+                    alt={imageUri}
+                    width={200}
+                    height={350}
+                  />
+                </Carousel.Item>
+              )
+            }
+          </Carousel>
         </Col>
       </Row>
     </Container>

@@ -11,6 +11,7 @@ export default function () {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
+          <Nav.Link href="/mirror">Mirror</Nav.Link>
           <NavDropdown title="Houses" id="basic-nav-dropdown">
             <NavDropdown.Header>Highland Park</NavDropdown.Header>
             <NavDropdown.Item href="houses/sage">Sage House &#x1F331;</NavDropdown.Item>
