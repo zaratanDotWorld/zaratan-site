@@ -30,7 +30,7 @@ export default function ({ images }) {
         <Col className="col-lg-4 order-1 order-lg-2 p-4 p-sm-5 p-lg-4 p-xl-5 green">
           <div className="center">
             <h1 className="spaced logo" style={{ fontSize: "92px" }}>Mirror</h1>
-            <p className="spaced rainbow-text-animated" style={{ fontSize: "32px" }}>No gods, no masters</p>
+            <p className="spaced rainbow-text-animated" style={{ fontSize: "32px" }}>Reflect your values</p>
             <h1 style={{ fontSize: "92px" }}>&#x1f4a0;</h1>
             <br></br>
             <Button variant="outline-success" size="lg" href={checkoutLink}>Start free trial</Button>
