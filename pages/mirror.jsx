@@ -23,6 +23,7 @@ export async function getStaticProps() {
 }
 
 export default function ({ images }) {
+  const checkoutLink = "https://buy.stripe.com/7sI5lwcjC3FXabKeUW";
   return (
     <Container fluid>
       <Row>
@@ -32,7 +33,7 @@ export default function ({ images }) {
             <p className="spaced rainbow-text-animated" style={{ fontSize: "32px" }}>No gods, no masters</p>
             <h1 style={{ fontSize: "92px" }}>&#x1f4a0;</h1>
             <br></br>
-            <Button variant="outline-success" size="lg" href="https://buy.stripe.com/6oE3do4Ra1xPdnW001">Start free trial</Button>
+            <Button variant="outline-success" size="lg" href={checkoutLink}>Start free trial</Button>
             <br></br>
             <br></br>
             <Link href="https://archive.org/details/kronovet-metagov-20230329">Watch the talk</Link>
