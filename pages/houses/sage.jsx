@@ -1,6 +1,6 @@
 import { S3 } from "@aws-sdk/client-s3";
 
-import { Container, Row, Col, Carousel, Table } from 'react-bootstrap';
+import { Container, Row, Col, Carousel, Table, Button } from 'react-bootstrap';
 import Image from 'next/image';
 
 export async function getStaticProps() {
@@ -23,31 +23,35 @@ export async function getStaticProps() {
 }
 
 export default function ({ images }) {
+  const applyUrl = "https://zaratan.managebuilding.com/Resident/rental-application/new";
+
   return (
     <Container fluid>
       <Row>
         <Col className="col-lg-4 order-1 order-lg-2 p-4 p-sm-5 p-lg-4 p-xl-5 green">
-          <h1 className="center spaced logo" style={{fontSize: "78px"}}>Sage House</h1>
-          <h1 className="center" style={{fontSize: "60px"}}>&#x1F331;</h1>
+          <div className="center">
+            <h1 className="spaced logo" style={{fontSize: "78px"}}>Sage House</h1>
+            <h1 style={{fontSize: "60px"}}>&#x1F331;</h1>
+            <br></br>
 
-          <br></br>
+            <p>
+              A beautifully-restored 1905 Craftsman house, in the heart of vibrant Highland Park, Los Angeles.
+            </p>
+            <p>
+              This nine-bedroom home features a
+              restaurant-style kitchen,
+              wainscotted dining room,
+              sunny living room,
+              quiet library,
+              second-floor deck,
+              large backyard with fire pit,
+              guest room,
+              and four full bathrooms.
+            </p>
 
-          <p>
-            Come live in a gorgeous 1905 Craftsman in the heart of vibrant Highland Park, Los Angeles.
-          </p>
-          <p>
-            Recently renovated, this nine-bedroom home features a
-            restaurant-style kitchen,
-            wainscotted dining room,
-            sunny living room,
-            quiet library,
-            second-floor deck,
-            large backyard with fire pit,
-            guest room,
-            and four full bathrooms.
-          </p>
-
-          <p className="center spaced rainbow-text-animated" style={{fontSize: "32px"}}>Now Open!</p>
+            <br></br>
+            <Button variant="outline-success" size="lg" href={applyUrl}>Apply Now!</Button>
+          </div>
         </Col>
         <Col className="col-lg-4 order-2 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
           <Table className="table center">

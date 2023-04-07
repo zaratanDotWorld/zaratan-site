@@ -1,5 +1,6 @@
 import { S3 } from "@aws-sdk/client-s3";
 import Image from 'next/image';
+import Link from "next/link";
 import { Container, Row, Col, Button, Carousel } from 'react-bootstrap';
 
 export async function getStaticProps() {
@@ -31,11 +32,14 @@ export default function ({ images }) {
             <p className="spaced rainbow-text-animated" style={{ fontSize: "32px" }}>No gods, no masters</p>
             <h1 style={{ fontSize: "92px" }}>&#x1f4a0;</h1>
             <br></br>
-            <Button variant="outline-dark">Get the app</Button>
+            <Button variant="outline-success" size="lg" href="https://buy.stripe.com/6oE3do4Ra1xPdnW001">Start free trial</Button>
+            <br></br>
+            <br></br>
+            <Link href="https://archive.org/details/kronovet-metagov-20230329">Watch the talk</Link>
           </div>
         </Col>
         <Col className="col-lg-4 order-2 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
-          <h5>Mirror is pioneering software for co-living.</h5>
+          <h5>Mirror is pioneering software for co-living, built on Slack.</h5>
           <hr></hr>
           <p>Developed by economists and game designers, Mirror is a set of tools for helping people share space:</p>
           <ul>
@@ -54,7 +58,7 @@ export default function ({ images }) {
           </ul>
         </Col>
         <Col className="col-lg-4 order-3 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
-          <Carousel interval={3600}>
+          <Carousel interval={3600} variant="dark">
             {
               images.map((imageUri, i) =>
                 <Carousel.Item key={i}>
