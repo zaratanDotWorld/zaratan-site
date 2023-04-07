@@ -12,12 +12,12 @@ export async function getStaticProps() {
     }});
 
     const { Contents } = await s3.listObjects({ Bucket: "zaratan.world" });
-    const imageRoot = "https://s3.amazonaws.com/zaratan.world/"
+    const cdnRoot = "https://d3gacl6pm59h8m.cloudfront.net/"
     const regex = /public\/images\/sage\/.*\.JPG/i;
 
     const images = Contents
       .filter(item => regex.test(item.Key))
-      .map(item => imageRoot + item.Key)
+      .map(item => cdnRoot + item.Key)
 
   return { props: { images } }
 }
