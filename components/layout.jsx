@@ -10,7 +10,8 @@ export default function Layout({ children }) {
     <main>{children}</main>
     <div className="text-center p-3 bg-light">
       &copy; { new Date().getFullYear() } Kronosapiens Labs
-      <br></br> <Link href="/privacy.html" style={{ fontSize: "14px" }}>Privacy Policy</Link>
+      <br></br>
+      <Link href="/privacy.html" style={{ fontSize: "14px" }}>Privacy Policy</Link> · <Link href="mailto:support@zaratan.world" style={{ fontSize: "14px" }}>Contact Support</Link>
     </div>
   </>
   );
