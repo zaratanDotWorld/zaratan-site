@@ -45,22 +45,22 @@ export default function () {
           <SignupForm></SignupForm>
         </Col>
         <Col className="col-lg-4 order-2 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
-          <h5>Zaratan is an emerging coliving company in Los Angeles, with a focus on freedom and accountability.</h5>
+          <h5>Zaratan is an emerging coliving company in Los Angeles. We build physical houses and develop pioneering software tools.</h5>
           <hr></hr>
           <p>We believe that:</p>
           <p>
-            <b>Housing</b> is not a luxury good &#x2013;&nbsp;
+            <b>Housing</b> is not a luxury &#x2013;&nbsp;
             <b>Home</b> is a place of safety and freedom &#x2013;&nbsp;
             <b>Community</b> cannot be bought &#x2013;&nbsp;
-            <b>Rules</b> don't have to be complicated &#x2013;&nbsp;
-            <b>Work</b> should be recognized &#x2013;&nbsp;
-            <b>Caring</b> for our enviroment starts at home.
+            <b>Rules</b> can be simple &#x2013;&nbsp;
+            <b>Work</b> should be valued &#x2013;&nbsp;
+            <b>Enviroment</b> starts at home.
           </p>
 
           <p>
-            We're looking for people who are <b>kind, creative, and playful</b>. We keep prices reasonable, and in return ask members to help with chores &#x2013; we don't have managers or servants.
-            Meetings can be boring, so we've <a className="text-reset" href="/mirror"><u>developed tools</u></a> to make running a house as easy as playing a game.
-            If you take the responsibility, this will be one of the best experiences of your life.
+            We're looking for people who are <b>kind, creative, and reliable</b>. We keep prices reasonable, and in return ask members to help with chores &#x2013; we don't have managers or servants.
+            Meetings can be boring, so we've developed tools to make running a house as easy as playing a game.
+            If you accept the responsibility, this might be one of the best experiences of your life.
           </p>
         </Col>
         <Col className="col-lg-4 order-3 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">

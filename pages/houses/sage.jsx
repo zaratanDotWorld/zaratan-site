@@ -35,22 +35,22 @@ export default function ({ images }) {
             <br></br>
 
             <p>
-              A beautifully-restored 1905 Craftsman house, in the heart of vibrant Highland Park, Los Angeles.
+              A beautifully-restored 1905 Craftsman, in the heart of vibrant Highland Park, Los Angeles.
             </p>
             <p>
               This nine-bedroom home features a
               restaurant-style kitchen,
-              wainscotted dining room,
+              original dining room,
               sunny living room,
               quiet library,
               second-floor deck,
-              large backyard with fire pit,
+              backyard with fire pit,
               guest room,
               and four full bathrooms.
             </p>
 
             <br></br>
-            <Button variant="outline-success" size="lg" href={applyUrl}>Apply Now!</Button>
+            <Button variant="outline-success" size="lg" href={applyUrl}>Apply Now</Button>
           </div>
         </Col>
         <Col className="col-lg-4 order-2 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">

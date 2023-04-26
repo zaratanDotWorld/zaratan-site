@@ -10,10 +10,16 @@ export default function () {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/mirror">Mirror</Nav.Link>
             <NavDropdown title="Houses" id="basic-nav-dropdown">
               <NavDropdown.Header>Highland Park</NavDropdown.Header>
-              <NavDropdown.Item href="/houses/sage">Sage House &#x1F331;</NavDropdown.Item>
+              <NavDropdown.Item href="/houses/sage">Sage</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Tools" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/tools">Overview</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/tools/chores">Chores</NavDropdown.Item>
+              <NavDropdown.Item href="/tools/hearts">Hearts</NavDropdown.Item>
+              <NavDropdown.Item href="/tools/things">Things</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

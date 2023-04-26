@@ -60,10 +60,7 @@ export default function ({ images }) {
       <Row>
         <Col className="col-lg-4 order-1 order-lg-2 p-4 p-sm-5 p-lg-4 p-xl-5 green">
           <div className="center">
-            <h1 className="spaced logo" style={{ fontSize: "92px" }}>Mirror</h1>
-            <p className="spaced rainbow-text-animated" style={{ fontSize: "32px" }}>Reflect your values</p>
             <h1 style={{ fontSize: "92px" }}>&#x1f4a0;</h1>
-            <hr></hr>
             <h2 className="logo">Pricing</h2>
             <p style={{ fontSize: "16px" }}><s>All plans come with a 90-day free trial</s><br></br>All plans are currently free</p>
             <Table className="table center" hover responsive>
@@ -90,9 +87,9 @@ export default function ({ images }) {
           </div>
         </Col>
         <Col className="col-lg-4 order-2 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
-          <h5>Mirror is pioneering software for co-living, built on Slack.</h5>
+          <h5>Zaratan builds pioneering software for co-living, running on Slack.</h5>
           <hr></hr>
-          <p>Developed by economists and game designers, Mirror is a set of tools for helping people share space:</p>
+          <p>Developed by economists and game designers, Zaratan creates tools to help people share space:</p>
           <ul>
             <li><b>Chores</b> for keeping it clean</li>
             <li><b>Hearts</b> for mutual accountability</li>
@@ -100,7 +97,7 @@ export default function ({ images }) {
             <li>And more to come</li>
           </ul>
 
-          <p>Mirror contains the latest thinking in ethical technology, with four core principles:</p>
+          <p>These tools contain the latest thinking in ethical technology, with four core principles:</p>
           <ul>
             <li>No managers or privileged roles</li>
             <li>Simple and intuitive inputs</li>
