@@ -45,7 +45,7 @@ export default function () {
           <SignupForm></SignupForm>
         </Col>
         <Col className="col-lg-4 order-2 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
-          <h5>Zaratan is an emerging coliving company in Los Angeles. We build physical houses and develop pioneering software tools.</h5>
+          <h5>Zaratan is an emerging coliving company in Los Angeles. We build physical houses and pioneering software tools.</h5>
           <hr></hr>
           <p>We believe that:</p>
           <p>
@@ -54,19 +54,26 @@ export default function () {
             <b>Community</b> cannot be bought &#x2013;&nbsp;
             <b>Rules</b> can be simple &#x2013;&nbsp;
             <b>Work</b> should be valued &#x2013;&nbsp;
-            <b>Enviroment</b> starts at home.
+            <b>Conservation</b> starts at home.
           </p>
 
           <p>
-            We're looking for people who are <b>kind, creative, and reliable</b>. We keep prices reasonable, and in return ask members to help with chores &#x2013; we don't have managers or servants.
-            Meetings can be boring, so we've developed tools to make running a house as easy as playing a game.
-            If you accept the responsibility, this might be one of the best experiences of your life.
+            We're looking for people who are <b>kind, creative, and reliable</b>. We keep prices reasonable, and in return ask members to help with chores &#x2013; we don't have managers or cleaners.
+            Meetings can be boring, so we made tools to make running a house as easy as playing a game.
+            If you can handle the freedom, this could be one of the best experiences of your life.
           </p>
         </Col>
         <Col className="col-lg-4 order-3 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
             {/* Image Source: https://www.deviantart.com/rowye/art/Turtle-Island-483132909 */}
             <Link href="https://en.wikipedia.org/wiki/Zaratan">
-              <Image className="img-fluid img-thumbnail" src={zaratanPic} alt="Image of a Zaratan" style={{ margin: "auto", display: "block", opacity: "0.65"}} />
+              <Image
+                className="rounded border border-3"
+                src={zaratanPic}
+                alt="Image of a Zaratan"
+                width={320}
+                height={400}
+                style={{ margin: "auto", display: "block", opacity: "0.75"}}
+              />
             </Link>
         </Col>
       </Row>

@@ -58,46 +58,49 @@ export default function ({ images }) {
   return (
     <Container fluid>
       <Row>
-        <Col className="col-lg-4 order-1 order-lg-2 p-4 p-sm-5 p-lg-4 p-xl-5 green">
+        <Col className="col-lg-4 order-lg-2 order-3 p-4 p-sm-5 p-lg-4 p-xl-5 green">
           <div className="center">
             <h1 style={{ fontSize: "92px" }}>&#x1f4a0;</h1>
             <h2 className="logo">Pricing</h2>
-            <p style={{ fontSize: "16px" }}><s>All plans come with a 90-day free trial</s><br></br>All plans are currently free</p>
+            <p style={{ fontSize: "16px" }}><s>All plans come with a 90-day free trial</s><br></br><b>All plans are currently free</b></p>
             <Table className="table center" hover responsive>
-            <thead>
-              <tr><th>Roommate</th><th>Family</th><th>Community</th></tr>
-            </thead>
-            <tbody style={{ fontSize: "16px" }}>
-              <tr><td>For groups of friends</td><td>For groups with shared values</td><td>For large groups sharing resources</td></tr>
-              <tr><td>Chores</td><td>Chores, Hearts</td><td>All apps</td></tr>
-              <tr><td>Up to 5 users</td><td>Up to 10 users</td><td>Up to 20 users</td></tr>
-              <tr><td><s>$20/mo</s></td><td><s>$40/mo</s></td><td><s>$60/mo</s></td></tr>
-              {/* <tr>
-                <td><Button variant="outline-success" size="sm" href={roommateUri}>Subscribe</Button></td>
-                <td><Button variant="outline-success" size="sm" href={familyUri}>Subscribe</Button></td>
-                <td><Button variant="outline-success" size="sm" href={communityUri}>Subscribe</Button></td>
-              </tr> */}
-              <tr>
-                <td><SlackButton appName="Chores" installUrl={choresUri} /></td>
-                <td><SlackButton appName="Hearts" installUrl={heartsUri} /></td>
-                <td><SlackButton appName="Things" installUrl={thingsUri} /></td>
-              </tr>
-            </tbody>
-          </Table>
+              <thead>
+                <tr><th>Roommate</th><th>Family</th><th>Community</th></tr>
+              </thead>
+              <tbody style={{ fontSize: "16px" }}>
+                <tr><td>For groups of friends</td><td>For groups with shared values</td><td>For large groups sharing resources</td></tr>
+                <tr><td>Chores</td><td>Chores, Hearts</td><td>All apps</td></tr>
+                <tr><td>Up to 5 users</td><td>Up to 10 users</td><td>Up to 20 users</td></tr>
+                <tr><td><s>$20/mo</s></td><td><s>$40/mo</s></td><td><s>$60/mo</s></td></tr>
+                {/* <tr>
+                  <td><Button variant="outline-success" size="sm" href={roommateUri}>Subscribe</Button></td>
+                  <td><Button variant="outline-success" size="sm" href={familyUri}>Subscribe</Button></td>
+                  <td><Button variant="outline-success" size="sm" href={communityUri}>Subscribe</Button></td>
+                </tr> */}
+                {/* <tr>
+                  <td><SlackButton appName="Chores" installUrl={choresUri} /></td>
+                  <td><SlackButton appName="Hearts" installUrl={heartsUri} /></td>
+                  <td><SlackButton appName="Things" installUrl={thingsUri} /></td>
+                </tr> */}
+              </tbody>
+            </Table>
+            <p>Coming soon...</p>
+            <Button variant="outline-success" size="md" href="https://mailchi.mp/a69de84158a5/app-interest">Get updates</Button>
           </div>
         </Col>
-        <Col className="col-lg-4 order-2 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
+
+        <Col className="col-lg-4 order-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
           <h5>Zaratan builds pioneering software for co-living, running on Slack.</h5>
           <hr></hr>
-          <p>Developed by economists and game designers, Zaratan creates tools to help people share space:</p>
+          <p>Developed by <b>economists and game designers</b>, Zaratan creates tools to help people share space:</p>
           <ul>
             <li><b>Chores</b> for keeping it clean</li>
             <li><b>Hearts</b> for mutual accountability</li>
-            <li><b>Things</b> for group purchasing</li>
+            <li><b>Things</b> for bulk purchasing</li>
             <li>And more to come</li>
           </ul>
 
-          <p>These tools contain the latest thinking in ethical technology, with four core principles:</p>
+          <p>These tools contain the latest thinking in <b>ethical technology</b>, with four core principles:</p>
           <ul>
             <li>No managers or privileged roles</li>
             <li>Simple and intuitive inputs</li>
@@ -109,19 +112,20 @@ export default function ({ images }) {
           <div className="center">
             <Link href="https://archive.org/details/kronovet-metagov-20230329">Watch the talk</Link>
           </div>
-
         </Col>
-        <Col className="col-lg-4 order-3 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
+
+        <Col className="col-lg-4 order-lg-3 order-2 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
           <Carousel interval={3600} variant="dark">
             {
               images.map((imageUri, i) =>
                 <Carousel.Item key={i}>
                   <Image
-                    className="img-thumbnail d-block w-100"
+                    className="rounded border border-3"
                     src={imageUri}
                     alt={imageUri}
-                    width={200}
-                    height={265}
+                    width={316}
+                    height={560}
+                    style={{ margin: "auto", display: "block" }}
                   />
                 </Carousel.Item>
               )

@@ -28,6 +28,7 @@ export default function ({ images }) {
   return (
     <Container fluid>
       <Row>
+
         <Col className="col-lg-4 order-1 order-lg-2 p-4 p-sm-5 p-lg-4 p-xl-5 green">
           <div className="center">
             <h1 className="spaced logo" style={{fontSize: "78px"}}>Sage House</h1>
@@ -35,16 +36,18 @@ export default function ({ images }) {
             <br></br>
 
             <p>
-              A beautifully-restored 1905 Craftsman, in the heart of vibrant Highland Park, Los Angeles.
+              A beautifully-restored 1905 Craftsman, in the heart of vibrant <b>Highland Park, Los Angeles</b>.
             </p>
             <p>
               This nine-bedroom home features a
               restaurant-style kitchen,
-              original dining room,
+              woodworked dining room,
               sunny living room,
               quiet library,
-              second-floor deck,
-              backyard with fire pit,
+              upstairs deck,
+              backyard fire pit,
+              recording studio,
+              gym,
               guest room,
               and four full bathrooms.
             </p>
@@ -53,40 +56,44 @@ export default function ({ images }) {
             <Button variant="outline-success" size="lg" href={applyUrl}>Apply Now</Button>
           </div>
         </Col>
-        <Col className="col-lg-4 order-2 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
-          <Table className="table center">
-            <thead>
-              <tr><th></th><th>Sage</th><th>Craiglist</th></tr>
-            </thead>
-            <tbody>
-              <tr><th>Rent</th><td>$1,150*</td><td>$950</td></tr>
-              <tr><th>Utilities</th><td>Included</td><td>$80</td></tr>
-              <tr><th>Supplies</th><td>Included</td><td>$60</td></tr>
-              <tr><th>Food Staples</th><td>Included</td><td>$70</td></tr>
-              <tr><th>Internet</th><td>Included</td><td>$40</td></tr>
-              <tr><th>Total</th><td style={{backgroundColor: "#00ff7f33"}}>$1,150</td><td>$1,200</td></tr>
-            </tbody>
-          </Table>
 
-          <p className="center">*Pricing varies by room</p>
-        </Col>
-        <Col className="col-lg-4 order-3 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
+        <Col className="col-lg-4 order-2 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
           <Carousel interval={3600}>
             {
               images.map((imageUri, i) =>
                 <Carousel.Item key={i}>
                   <Image
-                    className="img-thumbnail d-block w-100"
+                    className="rounded border border-3"
                     src={imageUri}
                     alt={imageUri}
-                    width={200}
-                    height={350}
+                    width={320}
+                    height={435}
+                    style={{ margin: "auto", display: "block" }}
                   />
                 </Carousel.Item>
               )
             }
           </Carousel>
         </Col>
+
+        <Col className="col-lg-4 order-3 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
+          <Table className="table center">
+            <thead>
+              <tr><th></th><th>Sage</th><th>Craiglist</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>Rent</th><td>$1,200*</td><td>$1050</td></tr>
+              <tr><th>Utilities</th><td>Included</td><td>$80</td></tr>
+              <tr><th>Supplies</th><td>Included</td><td>$60</td></tr>
+              <tr><th>Food Staples</th><td>Included</td><td>$120</td></tr>
+              <tr><th>Internet</th><td>Included</td><td>$40</td></tr>
+              <tr><th>Total</th><td style={{backgroundColor: "#00ff7f33"}}>$1,200</td><td>$1,350</td></tr>
+            </tbody>
+          </Table>
+
+          <p className="center">*Pricing varies by room</p>
+        </Col>
+
       </Row>
     </Container>
   );
