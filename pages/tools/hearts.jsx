@@ -3,16 +3,28 @@ import { Container, Row, Col } from 'react-bootstrap';
 export default function () {
   return (
     <Container fluid>
-      <Row>
-      <Col className="col-lg-4 p-4 p-sm-5 p-lg-4 p-xl-5 green">
+      <Row className="p-5">
+       <Col />
+        <Col>
           Coming soon
         </Col>
-        <Col className="col-lg-4 p-4 p-sm-5 p-lg-4 p-xl-5 red">
-        <b>Hearts</b>
+        <Col />
+      </Row>
+
+      <Row className="red p-5">
+        <Col />
+        <Col className="col-8 col-md-6 col-xl-4">
+          <b>Hearts</b>
         </Col>
-        <Col className="col-lg-4 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
+        <Col />
+      </Row>
+
+      <Row className="p-5">
+        <Col />
+        <Col>
           Coming soon
         </Col>
+        <Col />
       </Row>
     </Container>
   )

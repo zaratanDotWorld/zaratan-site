@@ -36,15 +36,20 @@ function SignupForm () {
 export default function () {
   return (
     <Container fluid>
-      <Row>
-        <Col className="col-lg-4 order-1 order-lg-2 p-4 p-sm-5 p-lg-4 p-xl-5 green">
+      <Row className="p-5">
+        <Col />
+        <Col>
           <h1 className="center spaced logo" style={{ fontSize: "92px" }}>Zaratan</h1>
           <p className="center spaced rainbow-text-animated" style={{ fontSize: "32px" }}>Find Your Place</p>
           <h1 className="center" style={{ fontSize: "92px" }}>&#x1F422;</h1>
           <br></br>
           <SignupForm></SignupForm>
         </Col>
-        <Col className="col-lg-4 order-2 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
+        <Col />
+      </Row>
+      <Row className="green p-5">
+        <Col />
+        <Col className="col-8 col-md-6 col-xl-4">
           <h5>Zaratan is an emerging coliving company in Los Angeles. We build physical houses and pioneering software tools.</h5>
           <hr></hr>
           <p>We believe that:</p>
@@ -63,7 +68,12 @@ export default function () {
             If you can handle the freedom, this could be one of the best experiences of your life.
           </p>
         </Col>
-        <Col className="col-lg-4 order-3 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
+        <Col />
+      </Row>
+
+      <Row className="p-5">
+        <Col />
+        <Col>
             {/* Image Source: https://www.deviantart.com/rowye/art/Turtle-Island-483132909 */}
             <Link href="https://en.wikipedia.org/wiki/Zaratan">
               <Image
@@ -76,6 +86,7 @@ export default function () {
               />
             </Link>
         </Col>
+        <Col />
       </Row>
     </Container>
   )

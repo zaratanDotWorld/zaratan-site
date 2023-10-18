@@ -27,9 +27,9 @@ export default function ({ images }) {
 
   return (
     <Container fluid>
-      <Row>
-
-        <Col className="col-lg-4 order-1 order-lg-2 p-4 p-sm-5 p-lg-4 p-xl-5 green">
+      <Row className="p-5">
+        <Col />
+        <Col className="col-8 col-md-6 col-xl-4">
           <div className="center">
             <h1 className="spaced logo" style={{fontSize: "78px"}}>Sage House</h1>
             <h1 style={{fontSize: "60px"}}>&#x1F331;</h1>
@@ -56,8 +56,34 @@ export default function ({ images }) {
             <Button variant="outline-success" size="lg" href={applyUrl}>Apply Now</Button>
           </div>
         </Col>
+        <Col />
+      </Row>
 
-        <Col className="col-lg-4 order-2 order-lg-3 p-4 p-sm-5 p-lg-4 p-xl-5 blue">
+      <Row className="p-5 red">
+        <Col />
+        <Col>
+          <Table className="table center">
+            <thead>
+              <tr><th></th><th>Sage</th><th>Craiglist</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>Rent</th><td>$1,200*</td><td>$1050</td></tr>
+              <tr><th>Utilities</th><td>Included</td><td>$80</td></tr>
+              <tr><th>Supplies</th><td>Included</td><td>$60</td></tr>
+              <tr><th>Food Staples</th><td>Included</td><td>$120</td></tr>
+              <tr><th>Internet</th><td>Included</td><td>$40</td></tr>
+              <tr><th>Total</th><td style={{backgroundColor: "#00ff7f33"}}>$1,200</td><td>$1,350</td></tr>
+            </tbody>
+          </Table>
+
+          <p className="center">*Pricing varies by room</p>
+        </Col>
+        <Col />
+      </Row>
+
+      <Row className="p-5">
+        <Col />
+        <Col>
           <Carousel interval={3600}>
             {
               images.map((imageUri, i) =>
@@ -75,25 +101,7 @@ export default function ({ images }) {
             }
           </Carousel>
         </Col>
-
-        <Col className="col-lg-4 order-3 order-lg-1 p-4 p-sm-5 p-lg-4 p-xl-5 red">
-          <Table className="table center">
-            <thead>
-              <tr><th></th><th>Sage</th><th>Craiglist</th></tr>
-            </thead>
-            <tbody>
-              <tr><th>Rent</th><td>$1,200*</td><td>$1050</td></tr>
-              <tr><th>Utilities</th><td>Included</td><td>$80</td></tr>
-              <tr><th>Supplies</th><td>Included</td><td>$60</td></tr>
-              <tr><th>Food Staples</th><td>Included</td><td>$120</td></tr>
-              <tr><th>Internet</th><td>Included</td><td>$40</td></tr>
-              <tr><th>Total</th><td style={{backgroundColor: "#00ff7f33"}}>$1,200</td><td>$1,350</td></tr>
-            </tbody>
-          </Table>
-
-          <p className="center">*Pricing varies by room</p>
-        </Col>
-
+        <Col />
       </Row>
     </Container>
   );
