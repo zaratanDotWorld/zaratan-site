@@ -23,7 +23,7 @@ export default function () {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <LoginButton loginUrl={loginUrl} />
+        {/* <LoginButton loginUrl={loginUrl} /> */}
       </Container>
     </Navbar>
   )
