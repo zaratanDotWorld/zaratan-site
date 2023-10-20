@@ -3,6 +3,8 @@ import { S3 } from "@aws-sdk/client-s3";
 import { Container, Row, Col, Carousel, Table, Button } from 'react-bootstrap';
 import Image from 'next/image';
 
+import Headpiece from '../../components/headpiece';
+
 export async function getStaticProps() {
   const s3 = new S3({
     region: "us-east-1",
@@ -30,15 +32,19 @@ export default function ({ images }) {
       <Row className="p-5">
         <Col />
         <Col className="col-8 col-md-6 col-xl-4">
-          <div className="center">
-            <h1 className="spaced logo" style={{fontSize: "78px"}}>Sage House</h1>
-            <h1 style={{fontSize: "60px"}}>&#x1F331;</h1>
-            <br></br>
+          <Headpiece
+            mainText="Sage House"
+            subText="Where It Started"
+            icon="&#x1F331;"
+            scale={25}
+          />
 
+          <br></br>
+          <div className="center">
             <p>
               A beautifully-restored 1905 Craftsman, in the heart of vibrant <b>Highland Park, Los Angeles</b>.
-            </p>
-            <p>
+
+              <br></br>
               This nine-bedroom home features a
               restaurant-style kitchen,
               woodworked dining room,

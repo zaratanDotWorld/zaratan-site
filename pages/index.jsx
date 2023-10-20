@@ -2,36 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Container, Row, Col } from 'react-bootstrap';
 
+import Headpiece from '../components/headpiece';
 import zaratanPic from "../public/images/zaratan-art.jpg";
-
-function SignupForm () {
-  return (
-    <div id="mc_embed_signup">
-      <form
-        action="https://github.us18.list-manage.com/subscribe/post?u=7176b8b238db3ff30396bf211&amp;id=f82230a866"
-        method="post"
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
-        className="validate"
-        target="_blank"
-        noValidate
-      >
-        <div id="mc_embed_signup_scroll">
-          <input type="email" defaultValue="" name="EMAIL" className="email" id="mce-EMAIL" placeholder="~ email address ~" required></input>
-          <br></br>
-          <br></br>
-          {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
-          <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true">
-            <input type="text" name="b_7176b8b238db3ff30396bf211_f82230a866" tabIndex="-1" defaultValue=""></input>
-          </div>
-          <div className="clear">
-            <input type="submit" value="Join the waitlist" name="subscribe" id="mc-embedded-subscribe" className="button"></input>
-          </div>
-        </div>
-      </form>
-    </div>
-  )
-}
 
 export default function () {
   return (
@@ -39,11 +11,15 @@ export default function () {
       <Row className="p-5">
         <Col />
         <Col>
-          <h1 className="center spaced logo" style={{ fontSize: "92px" }}>Zaratan</h1>
-          <p className="center spaced rainbow-text-animated" style={{ fontSize: "32px" }}>Find Your Place</p>
-          <h1 className="center" style={{ fontSize: "92px" }}>&#x1F422;</h1>
+          <Headpiece
+            mainText="Zaratan"
+            subText="Find Your Place"
+            icon="&#x1F422;"
+            scale={30}
+          />
+
           <br></br>
-          <SignupForm></SignupForm>
+          <SignupForm />
         </Col>
         <Col />
       </Row>
@@ -82,12 +58,41 @@ export default function () {
                 alt="Image of a Zaratan"
                 width={320}
                 height={400}
-                style={{ margin: "auto", display: "block", opacity: "0.75"}}
+                style={{ margin: "auto", display: "block", opacity: "0.85"}}
               />
             </Link>
         </Col>
         <Col />
       </Row>
     </Container>
+  )
+}
+
+function SignupForm () {
+  return (
+    <div id="mc_embed_signup">
+      <form
+        action="https://github.us18.list-manage.com/subscribe/post?u=7176b8b238db3ff30396bf211&amp;id=f82230a866"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        className="validate"
+        target="_blank"
+        noValidate
+      >
+        <div id="mc_embed_signup_scroll">
+          <input type="email" defaultValue="" name="EMAIL" className="email" id="mce-EMAIL" placeholder="~ email address ~" required></input>
+          <br></br>
+          <br></br>
+          {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
+          <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true">
+            <input type="text" name="b_7176b8b238db3ff30396bf211_f82230a866" tabIndex="-1" defaultValue=""></input>
+          </div>
+          <div className="clear">
+            <input type="submit" value="Join the party" name="subscribe" id="mc-embedded-subscribe" className="button"></input>
+          </div>
+        </div>
+      </form>
+    </div>
   )
 }

@@ -6,7 +6,7 @@ export default function () {
   return (
     <Navbar bg="light" expand="lg" style={{ padding: "10px 10px 10px 30px"}}>
       <Container fluid>
-        <Navbar.Brand href="/" >Zaratan &#x1F422;</Navbar.Brand>
+        <Navbar.Brand href="/">Zaratan &#x1F422;</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -23,12 +23,18 @@ export default function () {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <ul className="navbar-nav navbar-right">
-          <li className="nav-item btn btn-sm btn-outline-success">
-            <a className="nav-link" href={loginUrl}><b>Resident Login</b></a>
-          </li>
-        </ul>
+        <LoginButton loginUrl={loginUrl} />
       </Container>
     </Navbar>
+  )
+}
+
+export function LoginButton({ loginUrl }) {
+  return (
+    <ul className="navbar-nav navbar-right">
+      <li className="nav-item btn btn-sm btn-outline-success">
+        <a className="nav-link" href={loginUrl}><b>Housemate Login</b></a>
+      </li>
+  </ul>
   )
 }
