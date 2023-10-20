@@ -25,7 +25,7 @@ export default function () {
       </Row>
       <Row className="green p-5">
         <Col />
-        <Col className="col-8 col-md-6 col-xl-4">
+        <Col md={8} xl={6}>
           <h5>Zaratan is an emerging coliving company in Los Angeles. We build physical houses and pioneering software tools.</h5>
           <hr></hr>
           <p>We believe that:</p>

@@ -66,7 +66,7 @@ export default function ({ images }) {
 
       <Row className="p-5 blue">
         <Col />
-        <Col className="col-8 col-md-6 col-xl-4">
+        <Col md={8} xl={6}>
           <h5>Zaratan builds pioneering software for co-living, running on Slack.</h5>
           <hr></hr>
           <p>Developed by <b>economists and game designers</b>, Zaratan creates tools to help people share space:</p>

@@ -31,7 +31,7 @@ export default function ({ images }) {
     <Container fluid>
       <Row className="p-5">
         <Col />
-        <Col className="col-8 col-md-6 col-xl-4">
+        <Col md={8} xl={6}>
           <Headpiece
             mainText="Sage House"
             subText="Where It Started"
@@ -44,6 +44,7 @@ export default function ({ images }) {
             <p>
               A beautifully-restored 1905 Craftsman, in the heart of vibrant <b>Highland Park, Los Angeles</b>.
 
+              <br></br>
               <br></br>
               This nine-bedroom home features a
               restaurant-style kitchen,
@@ -68,7 +69,7 @@ export default function ({ images }) {
       <Row className="p-5 red">
         <Col />
         <Col>
-          <Table className="table center">
+          <Table className="center" style={{"--bs-table-bg": "rgba(0, 0, 0, 0.0)"}}> {/* TODO: fix this styling */}
             <thead>
               <tr><th></th><th>Sage</th><th>Craiglist</th></tr>
             </thead>
