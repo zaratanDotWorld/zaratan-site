@@ -73,40 +73,40 @@ export default function ({ images }) {
       <Row className="p-5">
         <Col />
         <Col lg={5} xl={4} className="p-3">
-          <Carousel interval={3600} variant="dark">
-              {
-                images.map((imageUri, i) =>
-                  <Carousel.Item key={i}>
-                    <Image
-                      className="rounded border border-3"
-                      src={imageUri}
-                      alt={imageUri}
-                      width={316}
-                      height={560}
-                      style={{ margin: "auto", display: "block" }}
-                    />
-                  </Carousel.Item>
-                )
-              }
-            </Carousel>
+          <Carousel fade interval={3600} controls={false} indicators={false}>
+            {
+              images.map((imageUri, i) =>
+                <Carousel.Item key={i}>
+                  <Image
+                    className="rounded border border-3"
+                    src={imageUri}
+                    alt={imageUri}
+                    width={316}
+                    height={560}
+                    style={{ margin: "auto", display: "block" }}
+                  />
+                </Carousel.Item>
+              )
+            }
+          </Carousel>
         </Col>
         <Col lg={5} xl={4} className="p-3">
-          <Carousel interval={3600} variant="dark">
-              {
-                images.reverse().map((imageUri, i) =>
-                  <Carousel.Item key={i}>
-                    <Image
-                      className="rounded border border-3"
-                      src={imageUri}
-                      alt={imageUri}
-                      width={316}
-                      height={560}
-                      style={{ margin: "auto", display: "block" }}
-                    />
-                  </Carousel.Item>
-                )
-              }
-            </Carousel>
+          <Carousel fade interval={3600} controls={false} indicators={false}>
+            {
+              images.reverse().map((imageUri, i) =>
+                <Carousel.Item key={i}>
+                  <Image
+                    className="rounded border border-3"
+                    src={imageUri}
+                    alt={imageUri}
+                    width={316}
+                    height={560}
+                    style={{ margin: "auto", display: "block" }}
+                  />
+                </Carousel.Item>
+              )
+            }
+          </Carousel>
         </Col>
         <Col />
       </Row>

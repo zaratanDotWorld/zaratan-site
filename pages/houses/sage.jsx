@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import { Container, Row, Col, Carousel, Table, Button } from 'react-bootstrap';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,6 +16,8 @@ export async function getStaticProps() {
 export default function ({ images }) {
   const applyUrl = "https://zaratan.managebuilding.com/Resident/rental-application/new";
   const manualUrl = "https://github.com/zaratanDotWorld/mirror/wiki";
+
+  const [index, setIndex] = useState(0);
 
   return (
     <Container fluid>
@@ -79,7 +83,14 @@ export default function ({ images }) {
       <Row className="p-5">
         <Col />
         <Col>
-          <Carousel interval={3600}>
+          <Carousel
+            fade
+            interval={3600}
+            controls={false}
+            indicators={false}
+            activeIndex={index}
+            onClick={() => setIndex((index + 1) % images.length)}
+          >
             {
               images.map((imageUri, i) =>
                 <Carousel.Item key={i}>
