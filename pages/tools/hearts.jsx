@@ -16,7 +16,7 @@ export async function getStaticProps() {
 
 export default function ({ images }) {
   const installUrl = "https://slack.com/oauth/v2/authorize?client_id=1003435112487.4076729845777" +
-    "&scope=channels:history,channels:read,chat:write,commands,reactions:write,users:read,channels:join&user_scope=";
+    "&scope=channels:history,channels:join,channels:read,chat:write,commands,reactions:write,users:read&user_scope=";
   const manualUrl = "https://github.com/zaratanDotWorld/mirror/wiki/Hearts";
 
   return (
