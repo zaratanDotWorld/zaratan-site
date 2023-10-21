@@ -4,23 +4,11 @@ import { Container, Row, Col, Carousel, Table, Button } from 'react-bootstrap';
 import Image from 'next/image';
 
 import Headpiece from '../../components/headpiece';
+import { getImages } from '../../utils/s3';
 
 export async function getStaticProps() {
-  const s3 = new S3({
-    region: "us-east-1",
-    credentials: {
-      accessKeyId: process.env.ACCESS_KEY_ID,
-      secretAccessKey: process.env.SECRET_ACCESS_KEY
-    }});
-
-    const { Contents } = await s3.listObjects({ Bucket: "zaratan.world" });
-    const cdnRoot = "https://d3gacl6pm59h8m.cloudfront.net/"
-    const regex = /public\/images\/sage\/.*\.JPG/i;
-
-    const images = Contents
-      .filter(item => regex.test(item.Key))
-      .map(item => cdnRoot + item.Key)
-
+  const regex = /public\/images\/sage\/.*\.JPG/i;
+  const images = await getImages({ regex });
   return { props: { images } }
 }
 
