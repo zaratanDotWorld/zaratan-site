@@ -3,21 +3,19 @@ import { useState } from 'react';
 import { Container, Row, Col, Carousel, Table, Button } from 'react-bootstrap';
 
 import Image from 'next/image';
-import Link from 'next/link';
 
 import Headpiece from '../../components/headpiece';
 
 import { getImages } from '../../utils/s3';
 
 export async function getStaticProps() {
-  const regex = /public\/images\/sage\/.*\.JPG/i;
+  const regex = /public\/images\/sage\/mls\/.*\.jpg/i;
   const images = await getImages({ regex });
   return { props: { images } }
 }
 
 export default function ({ images }) {
   const applyUrl = "https://zaratan.managebuilding.com/Resident/rental-application/new";
-  const manualUrl = "https://github.com/zaratanDotWorld/mirror/wiki";
 
   const [index, setIndex] = useState(0);
 
@@ -28,7 +26,7 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <Headpiece
             mainText="Sage House"
-            subText="Where It All Began"
+            subText="Where It Started"
             icon="&#x1F331;"
             scale={25}
           />
@@ -82,7 +80,7 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="p-5">
+      <Row className="py-5">
         <Col />
         <Col>
           <Carousel
@@ -99,9 +97,9 @@ export default function ({ images }) {
                   <Image
                     className="rounded border border-3"
                     src={imageUri}
-                    alt={imageUri}
-                    width={320}
-                    height={435}
+                    width={420}
+                    height={280}
+                    alt="Picture of Sage House"
                     style={{ margin: "auto", display: "block" }}
                   />
                 </Carousel.Item>
@@ -110,14 +108,6 @@ export default function ({ images }) {
           </Carousel>
         </Col>
         <Col />
-      </Row>
-
-      <Row className="pb-4 center">
-        <Col>
-          <p style={{ fontSize: "30px" }}>
-            &#x1f449; <Link href={manualUrl}>How Sage Works</Link> &#x1f448;
-          </p>
-        </Col>
       </Row>
     </Container>
   );
