@@ -19,7 +19,7 @@ export default function () {
           />
 
           <br></br>
-          <SignupForm />
+          <SignupForm text="Come on in" placeholder="~ email address ~" />
         </Col>
         <Col />
       </Row>
@@ -68,7 +68,7 @@ export default function () {
   )
 }
 
-function SignupForm () {
+function SignupForm ({ text, placeholder }) {
   return (
     <div id="mc_embed_signup">
       <form
@@ -81,7 +81,7 @@ function SignupForm () {
         noValidate
       >
         <div id="mc_embed_signup_scroll">
-          <input type="email" defaultValue="" name="EMAIL" className="email" id="mce-EMAIL" placeholder="~ email address ~" required></input>
+          <input type="email" defaultValue="" name="EMAIL" className="email" id="mce-EMAIL" placeholder={placeholder} required></input>
           <br></br>
           <br></br>
           {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
@@ -89,7 +89,7 @@ function SignupForm () {
             <input type="text" name="b_7176b8b238db3ff30396bf211_f82230a866" tabIndex="-1" defaultValue=""></input>
           </div>
           <div className="clear">
-            <input type="submit" value="Join the party" name="subscribe" id="mc-embedded-subscribe" className="button"></input>
+            <input type="submit" value={text} name="subscribe" id="mc-embedded-subscribe" className="button"></input>
           </div>
         </div>
       </form>

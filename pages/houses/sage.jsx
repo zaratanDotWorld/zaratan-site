@@ -1,7 +1,6 @@
-import { S3 } from "@aws-sdk/client-s3";
-
 import { Container, Row, Col, Carousel, Table, Button } from 'react-bootstrap';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Headpiece from '../../components/headpiece';
 import { getImages } from '../../utils/s3';
@@ -14,6 +13,7 @@ export async function getStaticProps() {
 
 export default function ({ images }) {
   const applyUrl = "https://zaratan.managebuilding.com/Resident/rental-application/new";
+  const manualUrl = "https://github.com/zaratanDotWorld/mirror/wiki";
 
   return (
     <Container fluid>
@@ -22,7 +22,7 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <Headpiece
             mainText="Sage House"
-            subText="Where It Started"
+            subText="Where It All Began"
             icon="&#x1F331;"
             scale={25}
           />
@@ -59,7 +59,7 @@ export default function ({ images }) {
         <Col>
           <Table className="center" style={{"--bs-table-bg": "rgba(0, 0, 0, 0.0)"}}> {/* TODO: fix this styling */}
             <thead>
-              <tr><th></th><th>Sage</th><th>Craiglist</th></tr>
+              <tr><th></th><th>Sage</th><th>Craigslist</th></tr>
             </thead>
             <tbody>
               <tr><th>Rent</th><td>$1,200*</td><td>$1050</td></tr>
@@ -71,7 +71,7 @@ export default function ({ images }) {
             </tbody>
           </Table>
 
-          <p className="center">*Pricing varies by room</p>
+          <p className="center">*Price varies by room</p>
         </Col>
         <Col />
       </Row>
@@ -97,6 +97,14 @@ export default function ({ images }) {
           </Carousel>
         </Col>
         <Col />
+      </Row>
+
+      <Row className="pb-4 center">
+        <Col>
+          <p style={{ fontSize: "30px" }}>
+            &#x1f449; <Link href={manualUrl}>How Sage Works</Link> &#x1f448;
+          </p>
+        </Col>
       </Row>
     </Container>
   );

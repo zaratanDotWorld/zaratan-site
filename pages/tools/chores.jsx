@@ -16,7 +16,7 @@ export async function getStaticProps() {
 
 export default function ({ images }) {
   const installUrl = "https://slack.com/oauth/v2/authorize?client_id=1003435112487.1005562872163" +
-    "&scope=channels:history,channels:join,channels:read,chat:write,commands,users:read&user_scope=";
+    "&scope=channels:join,chat:write,commands,users:read&user_scope=";
   const manualUrl = "https://github.com/zaratanDotWorld/mirror/wiki/Chores";
 
   return (
@@ -119,7 +119,7 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="pb-5 center">
+      <Row className="pb-4 center">
         <Col>
           <p style={{ fontSize: "30px" }}>
             &#x1f449; <Link href={manualUrl}>Read the manual</Link> &#x1f448;

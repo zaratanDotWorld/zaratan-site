@@ -116,7 +116,7 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="pb-5 center">
+      <Row className="pb-4 center">
         <Col>
           <p style={{ fontSize: "30px" }}>
             &#x1f449; <Link href={manualUrl}>Read the manual</Link> &#x1f448;

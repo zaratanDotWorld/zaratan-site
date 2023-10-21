@@ -22,7 +22,7 @@ export default function () {
           />
 
           <br></br>
-          <p>Coming soon...</p>
+          <p>Currently in <b>beta</b>, but nearly ready...</p>
           <Button variant="outline-success" size="md" href={mailchimpUrl}>Join the waitlist</Button>
         </Col>
         <Col />
@@ -35,9 +35,9 @@ export default function () {
           <hr></hr>
           <p>Developed by <b>economists and game designers</b>, Zaratan creates tools to help people share space:</p>
           <ul>
-            <li><b>Chores</b> for keeping it clean</li>
-            <li><b>Hearts</b> for mutual accountability</li>
-            <li><b>Things</b> for bulk purchasing</li>
+            <li><b><Link href="/tools/chores" className="text-decoration-none">Chores</Link></b> for keeping it clean</li>
+            <li><b><Link href="/tools/hearts" className="text-decoration-none">Hearts</Link></b> for mutual accountability</li>
+            <li><b><Link href="/tools/things" className="text-decoration-none">Things</Link></b> for bulk purchasing</li>
             <li>And more to come</li>
           </ul>
 
@@ -51,7 +51,7 @@ export default function () {
 
           <br></br>
           <div className="center">
-            <Link href="https://archive.org/details/kronovet-metagov-20230329">Watch the talk</Link>
+            <Link href="https://archive.org/details/kronovet-metagov-20230329"><b>Watch the talk</b></Link>
           </div>
         </Col>
         <Col />
