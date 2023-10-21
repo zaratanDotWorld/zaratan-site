@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
-import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import Headpiece from '../../components/headpiece';
+import IPhoneCarousel from '../../components/carousel';
 import SlackButton from '../../components/slack';
 
 import { getImages } from '../../utils/s3';
@@ -73,40 +73,10 @@ export default function ({ images }) {
       <Row className="p-5">
         <Col />
         <Col lg={5} xl={4} className="p-3">
-          <Carousel fade interval={3600} controls={false} indicators={false}>
-            {
-              images.map((imageUri, i) =>
-                <Carousel.Item key={i}>
-                  <Image
-                    className="rounded border border-3"
-                    src={imageUri}
-                    alt={imageUri}
-                    width={316}
-                    height={560}
-                    style={{ margin: "auto", display: "block" }}
-                  />
-                </Carousel.Item>
-              )
-            }
-          </Carousel>
+          <IPhoneCarousel images={images} />
         </Col>
         <Col lg={5} xl={4} className="p-3">
-          <Carousel fade interval={3600} controls={false} indicators={false}>
-            {
-              images.reverse().map((imageUri, i) =>
-                <Carousel.Item key={i}>
-                  <Image
-                    className="rounded border border-3"
-                    src={imageUri}
-                    alt={imageUri}
-                    width={316}
-                    height={560}
-                    style={{ margin: "auto", display: "block" }}
-                  />
-                </Carousel.Item>
-              )
-            }
-          </Carousel>
+          <IPhoneCarousel images={[...images].reverse()} />
         </Col>
         <Col />
       </Row>

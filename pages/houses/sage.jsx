@@ -1,10 +1,12 @@
 import { useState } from 'react';
 
 import { Container, Row, Col, Carousel, Table, Button } from 'react-bootstrap';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
 import Headpiece from '../../components/headpiece';
+
 import { getImages } from '../../utils/s3';
 
 export async function getStaticProps() {
