@@ -28,7 +28,6 @@ export default function ({ images }) {
             mainText="Sage House"
             subText="Where It Started"
             icon="&#x1F331;"
-            scale={25}
           />
 
           <br></br>
@@ -58,10 +57,10 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="p-5 red">
+      <Row className="p-5 red center">
         <Col />
         <Col>
-          <Table className="center" style={{"--bs-table-bg": "rgba(0, 0, 0, 0.0)"}}> {/* TODO: fix this styling */}
+          <Table hover responsive style={{"--bs-table-bg": "rgba(0, 0, 0, 0.0)"}}>
             <thead>
               <tr><th></th><th>Sage</th><th>Craigslist</th></tr>
             </thead>
@@ -75,7 +74,7 @@ export default function ({ images }) {
             </tbody>
           </Table>
 
-          <p className="center">*Price varies by room</p>
+          <p>*Price varies by room</p>
         </Col>
         <Col />
       </Row>

@@ -1,16 +1,25 @@
+import Head from 'next/head';
+
 import Analytics from '../components/analytics';
-import Head from '../components/head';
 import Layout from '../components/layout';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/global.css';
 import '../styles/mailchimp.css';
 
-export  default function Website({ Component, pageProps }) {
+export  default function ({ Component, pageProps }) {
+  const fontsUrl = "https://fonts.googleapis.com/css" +
+    "?family=EB+Garamond:400,700&display=swap";
+
   return (
     <div>
       <Analytics analyticsId='G-GC4C7YJ78Q' />
-      <Head siteName="Zaratan" />
+      <link href={fontsUrl} rel="stylesheet" />
+
+      <Head>
+        <title>Zaratan</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
       <Layout>
         <Component {...pageProps} />

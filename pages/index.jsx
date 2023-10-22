@@ -15,7 +15,6 @@ export default function () {
             mainText="Zaratan"
             subText="Find Your Place"
             icon="&#x1F422;"
-            scale={30}
           />
 
           <br></br>

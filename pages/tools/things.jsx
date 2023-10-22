@@ -23,12 +23,11 @@ export default function ({ images }) {
     <Container fluid>
       <Row className="p-5 center">
        <Col />
-        <Col>
+        <Col md={8} xl={6}>
           <Headpiece
               mainText="Things"
               subText="Keeping It Stocked"
               icon="&#x1f6d2;"
-              scale={25}
             />
             <br></br>
             <SlackButton text="Install Now" url={installUrl} />
@@ -83,7 +82,7 @@ export default function ({ images }) {
 
       <Row className="pb-4 center">
         <Col>
-          <p style={{ fontSize: "30px" }}>
+          <p style={{ fontSize: "1.5em" }}>
             &#x1f449; <Link href={manualUrl}>Read the manual</Link> &#x1f448;
           </p>
         </Col>

@@ -13,12 +13,11 @@ export default function () {
     <Container fluid>
       <Row className="p-5 center">
         <Col />
-        <Col>
+        <Col md={8} xl={6}>
          <Headpiece
             mainText="Tools"
             subText="Making It Work"
             icon="&#x1f4a0;"
-            scale={30}
           />
 
           <br></br>
@@ -57,34 +56,32 @@ export default function () {
         <Col />
       </Row>
 
-      <Row className="p-5">
+      <Row className="p-5 center">
         <Col />
         <Col>
-          <div className="center">
-            <h2>Pricing</h2>
-            <p style={{ fontSize: "16px" }}><s>All plans come with a 90-day free trial</s><br></br><b>All plans are currently free</b></p>
-            <Table className="table center" hover responsive>
-              <thead>
-                <tr><th>Roommate</th><th>Family</th><th>Community</th></tr>
-              </thead>
-              <tbody style={{ fontSize: "16px" }}>
-                <tr><td>For groups of friends</td><td>For groups with shared values</td><td>For large groups sharing resources</td></tr>
-                <tr><td>Chores</td><td>Chores, Hearts</td><td>All apps</td></tr>
-                <tr><td>Up to 5 users</td><td>Up to 10 users</td><td>Up to 20 users</td></tr>
-                <tr><td><s>$20/mo</s></td><td><s>$40/mo</s></td><td><s>$60/mo</s></td></tr>
-                {/* <tr>
-                  <td><Button variant="outline-success" size="sm" href={roommateUrl}>Subscribe</Button></td>
-                  <td><Button variant="outline-success" size="sm" href={familyUrl}>Subscribe</Button></td>
-                  <td><Button variant="outline-success" size="sm" href={communityUrl}>Subscribe</Button></td>
-                </tr> */}
-                {/* <tr>
-                  <td><SlackButton appName="Chores" installUrl={choresUrl} /></td>
-                  <td><SlackButton appName="Hearts" installUrl={heartsUrl} /></td>
-                  <td><SlackButton appName="Things" installUrl={thingsUrl} /></td>
-                </tr> */}
-              </tbody>
-            </Table>
-          </div>
+          <h2>Pricing</h2>
+          <p><s>All plans come with a 90-day trial</s><br></br><b>All plans are currently free</b></p>
+          <Table hover responsive>
+            <thead>
+              <tr><th>Roommate</th><th>Family</th><th>Community</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>For groups of friends</td><td>For groups with shared values</td><td>For large groups sharing resources</td></tr>
+              <tr><td>Chores</td><td>Chores, Hearts</td><td>All apps</td></tr>
+              <tr><td>Up to 5 users</td><td>Up to 10 users</td><td>Up to 20 users</td></tr>
+              <tr><td><s>$20/mo</s></td><td><s>$40/mo</s></td><td><s>$60/mo</s></td></tr>
+              {/* <tr>
+                <td><Button variant="outline-success" size="sm" href={roommateUrl}>Subscribe</Button></td>
+                <td><Button variant="outline-success" size="sm" href={familyUrl}>Subscribe</Button></td>
+                <td><Button variant="outline-success" size="sm" href={communityUrl}>Subscribe</Button></td>
+              </tr> */}
+              {/* <tr>
+                <td><SlackButton appName="Chores" installUrl={choresUrl} /></td>
+                <td><SlackButton appName="Hearts" installUrl={heartsUrl} /></td>
+                <td><SlackButton appName="Things" installUrl={thingsUrl} /></td>
+              </tr> */}
+            </tbody>
+          </Table>
         </Col>
         <Col />
       </Row>
