@@ -77,11 +77,8 @@ export default function ({ images }) {
 
       <Row className="p-4">
         <Col />
-        <Col lg={5} xl={4}>
+        <Col lg={10} xl={8}>
           <IPhoneCarousel images={images} />
-        </Col>
-        <Col lg={5} xl={4}>
-          <IPhoneCarousel images={[...images].reverse()} />
         </Col>
         <Col />
       </Row>
