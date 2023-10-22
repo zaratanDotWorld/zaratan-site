@@ -9,7 +9,7 @@ import SlackButton from '../../components/slack';
 import { getImages } from '../../utils/s3';
 
 export async function getStaticProps() {
-  const regex = /public\/images\/mirror\/chores.*\.jpg/i;
+  const regex = /public\/images\/mirror\/framed-mobile-chores.*\.png/i;
   const images = await getImages({ regex });
   return { props: { images } }
 }
@@ -77,12 +77,12 @@ export default function ({ images }) {
         <Col/>
       </Row>
 
-      <Row className="p-5">
+      <Row className="p-4">
         <Col />
-        <Col lg={5} xl={4} className="p-3">
+        <Col lg={5} xl={4}>
           <IPhoneCarousel images={images} />
         </Col>
-        <Col lg={5} xl={4} className="p-3">
+        <Col lg={5} xl={4}>
           <IPhoneCarousel images={[...images].reverse()} />
         </Col>
         <Col />

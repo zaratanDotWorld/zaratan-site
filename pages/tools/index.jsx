@@ -58,7 +58,7 @@ export default function () {
 
       <Row className="p-5 center">
         <Col />
-        <Col>
+        <Col md={8} xl={6}>
           <h2>Pricing</h2>
           <p><s>All plans come with a 90-day trial</s><br></br><b>All plans are currently free</b></p>
           <Table hover responsive>

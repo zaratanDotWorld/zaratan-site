@@ -59,7 +59,7 @@ export default function ({ images }) {
 
       <Row className="p-5 red center">
         <Col />
-        <Col>
+        <Col md={8} xl={6}>
           <Table hover responsive style={{"--bs-table-bg": "rgba(0, 0, 0, 0.0)"}}>
             <thead>
               <tr><th></th><th>Sage</th><th>Craigslist</th></tr>
@@ -81,7 +81,7 @@ export default function ({ images }) {
 
       <Row className="p-5">
         <Col />
-        <Col md={8} xl={6} >
+        <Col md={8} xl={6}>
           <Carousel
             fade
             interval={3600}
@@ -92,7 +92,7 @@ export default function ({ images }) {
           >
             {
               images.map((imageUri, i) =>
-                <Carousel.Item key={i} style={{position:"relative", height:"500px"}} >
+                <Carousel.Item key={i} style={{position:"relative", height:"500px"}}>
                   <Image
                     fill
                     src={imageUri}
