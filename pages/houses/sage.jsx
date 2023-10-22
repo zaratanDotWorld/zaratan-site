@@ -80,9 +80,9 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="py-5">
+      <Row className="p-5">
         <Col />
-        <Col>
+        <Col md={8} xl={6} >
           <Carousel
             fade
             interval={3600}
@@ -93,14 +93,12 @@ export default function ({ images }) {
           >
             {
               images.map((imageUri, i) =>
-                <Carousel.Item key={i}>
+                <Carousel.Item key={i} style={{position:"relative", height:"500px"}} >
                   <Image
-                    className="rounded border border-3"
+                    fill
                     src={imageUri}
-                    width={420}
-                    height={280}
                     alt="Picture of Sage House"
-                    style={{ margin: "auto", display: "block" }}
+                    style={{ objectFit: "contain" }}
                   />
                 </Carousel.Item>
               )
