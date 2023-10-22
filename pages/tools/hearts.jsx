@@ -26,7 +26,7 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <Headpiece
               mainText="Hearts"
-              subText="Keeping It Honest"
+              subText="Keep It Honest"
               icon="&#x1f496;"
               color="red"
             />
@@ -41,11 +41,12 @@ export default function ({ images }) {
         <Col md={10} xl={6}>
           <h5><b>Hearts is Zaratan's accountability tool</b>, helping people establish mutual expectations and work through conflicts.</h5>
           <p>
-            Hearts provides a way to hold people accountable to shared commitments, while putting growth and forgiveness front-and-center.
-            If conflicts arise (as they inevitably will), and folks are unable to work things out between themselves,
-            Hearts can support a fair resolution.
-            Folks lose hearts if they skimp on chores, but automatically earn them back over time.
-            You can also give "karma" to people who go above-and-beyond, which earns them bonus hearts.
+            Hearts helps hold people accountable to shared commitments, while putting growth and forgiveness front-and-center.
+            When conflicts arise, and folks are unable to work things out amongst themselves, the system can support a fair resolution.
+          </p>
+          <p>
+            Folks lose hearts for not doing chores, but earn them back over time.
+            You can also give "karma" to someone going the extra mile, which gets them bonus hearts.
           </p>
           <hr></hr>
         </Col>
@@ -58,7 +59,7 @@ export default function ({ images }) {
           <h5>&#x1f62d; Old Way</h5>
           <ul>
             <li>Holding grudges</li>
-            <li>Petty politics</li>
+            <li>Cliques and pettiness</li>
             <li>Selfish behaviors</li>
             <li>Feeling silenced</li>
           </ul>
@@ -66,9 +67,9 @@ export default function ({ images }) {
         <Col md={5} xl={3}>
           <h5>&#x1f929; New Way</h5>
           <ul>
-            <li>Forgiveness over time</li>
             <li>Clear process</li>
             <li>Respect and acknowledgment</li>
+            <li>Forgiveness over time</li>
             <li>Feeling heard</li>
           </ul>
         </Col>

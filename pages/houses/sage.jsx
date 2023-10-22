@@ -52,7 +52,7 @@ export default function ({ images }) {
             </p>
 
             <br></br>
-            <Button variant="outline-success" size="lg" href={applyUrl}>Apply Now</Button>
+            <Button variant="outline-danger" size="lg" href={applyUrl}>Apply Now</Button>
           </div>
         </Col>
         <Col />
@@ -66,7 +66,7 @@ export default function ({ images }) {
               <tr><th></th><th>Sage</th><th>Craigslist</th></tr>
             </thead>
             <tbody>
-              <tr><th>Rent</th><td>$1,200*</td><td>$1050</td></tr>
+              <tr><th>Rent</th><td>$1,200*</td><td>$1,050</td></tr>
               <tr><th>Utilities</th><td>Included</td><td>$80</td></tr>
               <tr><th>Supplies</th><td>Included</td><td>$60</td></tr>
               <tr><th>Food Staples</th><td>Included</td><td>$120</td></tr>

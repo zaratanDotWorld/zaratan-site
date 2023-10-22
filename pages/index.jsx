@@ -31,7 +31,7 @@ export default function () {
           <p>We believe that:</p>
           <p>
             <b>Housing</b> is not a luxury &#x2013;&nbsp;
-            <b>Home</b> is a place of safety and freedom &#x2013;&nbsp;
+            <b>Home</b> is a place of empowerment &#x2013;&nbsp;
             <b>Community</b> cannot be bought &#x2013;&nbsp;
             <b>Rules</b> can be simple &#x2013;&nbsp;
             <b>Work</b> should be valued &#x2013;&nbsp;
@@ -39,7 +39,7 @@ export default function () {
           </p>
 
           <p>
-            We're looking for people who are <b>kind, creative, and reliable</b>. We keep prices reasonable, and in return ask members to help with chores &#x2013; we don't have managers or cleaners.
+            We're looking for people who are <b>friendly, creative, and reliable</b>. We keep prices reasonable, and expect residents to help run their houses.
             Meetings can be boring, so we made tools to make running a house as easy as playing a game.
             If you can handle the freedom, this could be one of the best experiences of your life.
           </p>

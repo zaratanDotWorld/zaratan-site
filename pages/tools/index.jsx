@@ -22,8 +22,8 @@ export default function () {
           />
 
           <br></br>
-          <p>Currently in <b>beta</b>, but nearly ready...</p>
-          <Button variant="outline-primary" size="md" href={mailchimpUrl}>Join the waitlist</Button>
+          <p>Currently in <b>open beta</b></p>
+          <Button variant="outline-primary" size="md" href={mailchimpUrl}>Get updates</Button>
         </Col>
         <Col />
       </Row>
@@ -33,7 +33,7 @@ export default function () {
         <Col md={8} xl={6}>
           <h5>Zaratan builds pioneering software for co-living, running on Slack.</h5>
           <hr></hr>
-          <p>Developed by <b>economists and game designers</b>, Zaratan creates tools to help people share space:</p>
+          <p>Developed by <b>economists and game designers</b>, Zaratan creates open-source tools to help people share space:</p>
           <ul>
             <li><b><Link href="/tools/chores" className="text-decoration-none">Chores</Link></b> for keeping it clean</li>
             <li><b><Link href="/tools/hearts" className="text-decoration-none">Hearts</Link></b> for mutual accountability</li>
@@ -51,7 +51,7 @@ export default function () {
 
           <br></br>
           <div className="center">
-            <Link href="https://archive.org/details/kronovet-metagov-20230329"><b>Watch the talk</b></Link>
+            <Link href="https://archive.org/details/kronovet-metagov-20230329">Watch the talk</Link> · <Link href="https://github.com/zaratanDotWorld/mirror">See the code</Link>
           </div>
         </Col>
         <Col />

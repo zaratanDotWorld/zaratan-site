@@ -26,7 +26,7 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <Headpiece
               mainText="Chores"
-              subText="Keeping It Clean"
+              subText="Keep It Clean"
               icon="&#x1f9e4;"
               color="green"
             />
@@ -41,14 +41,14 @@ export default function ({ images }) {
         <Col md={10} xl={6}>
           <h5><b>Chores is Zaratan's crown jewel</b>, making dirty dishes and passive-aggressive sticky notes a thing of the past.</h5>
           <p>
-            Chores is a chore wheel for the 21st century, ensuring everyone does their part, on their terms.
-            Instead of restrictive chore schedules or ineffective "bragging boards," chores are worth points.
+            Chores is a chore wheel for the 21st century, helping everyone do their part, on their terms.
+            Instead of restrictive schedules or inconsistent "bragging boards," people do chores for points.
             Everyone owes 100 points per month, and the longer a chore goes undone, the more points it's worth.
+            Folks co-create their list of chores, and they fine-tune priorities so that more points go to more important chores.
           </p>
           <p>
-            Folks co-create their list of chores, and they fine-tune the priorities so more points go to more important chores.
-            The Chores system is dynamic and flexible, letting people gravitate towards the work they like best.
-            The best part? It all happens like magic.
+            The system is dynamic and flexible, helping people orient around what they like best.
+            The best part? It happens like magic.
           </p>
           <hr></hr>
         </Col>
@@ -61,7 +61,7 @@ export default function ({ images }) {
           <h5>&#x1f62d; Old Way</h5>
           <ul>
             <li>Dirty dishes</li>
-            <li>Passive-aggressive sticky notes</li>
+            <li>Passive-aggressive notes</li>
             <li>Feeling taken advantage of</li>
             <li>Endless meetings</li>
           </ul>

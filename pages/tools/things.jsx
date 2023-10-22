@@ -26,7 +26,7 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <Headpiece
               mainText="Things"
-              subText="Keeping It Stocked"
+              subText="Keep It Stocked"
               icon="&#x1f6d2;"
               color="blue"
             />
@@ -39,10 +39,14 @@ export default function ({ images }) {
       <Row className="accent-blue pt-5 px-5">
         <Col />
         <Col md={10} xl={6}>
-          <h5><b>Things is Zaratan's purchasing tool</b>, helping people easily manage shared funds.</h5>
+          <h5><b>Things is Zaratan's buying tool</b>, helping people manage shared funds.</h5>
           <p>
-            Things lets folks co-create a list of shared staples and makes it easy to buy more when you start running low.
-            Proposed "buys" are approved by emoji-vote, with more upvotes needed to approve larger purchases.
+            Things lets folks co-create a list of shared staples that everyone uses.
+            When supplies run low, anyone can propose a "buy."
+            More expensive buys need more upvotes to be approved.
+          </p>
+          <p>
+            Budgets are public, letting folks collectively set financial priorities.
           </p>
           <hr></hr>
         </Col>
@@ -54,17 +58,17 @@ export default function ({ images }) {
         <Col md={5} xl={3}>
           <h5>&#x1f62d; Old Way</h5>
           <ul>
-            <li>Many spreadsheets</li>
-            <li>Tracking inventory</li>
-            <li>Complex preferences</li>
+            <li>Making spreadsheets</li>
+            <li>Taking inventory</li>
+            <li>Heated debates</li>
           </ul>
         </Col>
         <Col md={5} xl={3}>
           <h5>&#x1f929; New Way</h5>
           <ul>
-            <li>Simple process</li>
-            <li>Everyone can participate</li>
-            <li>Clear needs</li>
+            <li>Flexible process</li>
+            <li>Everyone participates</li>
+            <li>Simplicity and transparency</li>
           </ul>
         </Col>
         <Col/>
