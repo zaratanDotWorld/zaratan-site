@@ -78,7 +78,16 @@ function SignupForm ({ text, placeholder }) {
         noValidate
       >
         <div id="mc_embed_signup_scroll">
-          <input type="email" defaultValue="" name="EMAIL" className="email" id="mce-EMAIL" placeholder={placeholder} required></input>
+          <input
+            type="email"
+            defaultValue=""
+            name="EMAIL"
+            className="email"
+            id="mce-EMAIL"
+            placeholder={placeholder}
+            style={{textAlign: "center"}}
+            required>
+          </input>
           <br></br>
           <br></br>
           {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
