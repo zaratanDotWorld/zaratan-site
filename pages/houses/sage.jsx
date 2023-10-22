@@ -27,7 +27,8 @@ export default function ({ images }) {
           <Headpiece
             mainText="Sage House"
             subText="Where It Started"
-            icon="&#x1F331;"
+            icon="&#x1FAB4;"
+            color="red"
           />
 
           <br></br>
@@ -57,7 +58,7 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="p-5 red center">
+      <Row className="p-5 accent-red center">
         <Col />
         <Col md={8} xl={6}>
           <Table hover responsive style={{"--bs-table-bg": "rgba(0, 0, 0, 0.0)"}}>

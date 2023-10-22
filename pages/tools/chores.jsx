@@ -28,6 +28,7 @@ export default function ({ images }) {
               mainText="Chores"
               subText="Keeping It Clean"
               icon="&#x1f9e4;"
+              color="green"
             />
             <br></br>
             <SlackButton text="Install Now" url={installUrl} />
@@ -35,7 +36,7 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="green pt-5 px-5">
+      <Row className="accent-green pt-5 px-5">
         <Col />
         <Col md={10} xl={6}>
           <h5><b>Chores is Zaratan's crown jewel</b>, making dirty dishes and passive-aggressive sticky notes a thing of the past.</h5>
@@ -54,7 +55,7 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="green pb-5 px-5">
+      <Row className="accent-green pb-5 px-5">
         <Col/>
         <Col md={5} xl={3}>
           <h5>&#x1f62d; Old Way</h5>

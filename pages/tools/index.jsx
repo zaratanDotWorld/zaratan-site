@@ -18,16 +18,17 @@ export default function () {
             mainText="Tools"
             subText="Making It Work"
             icon="&#x1f4a0;"
+            color="blue"
           />
 
           <br></br>
           <p>Currently in <b>beta</b>, but nearly ready...</p>
-          <Button variant="outline-success" size="md" href={mailchimpUrl}>Join the waitlist</Button>
+          <Button variant="outline-primary" size="md" href={mailchimpUrl}>Join the waitlist</Button>
         </Col>
         <Col />
       </Row>
 
-      <Row className="p-5 blue">
+      <Row className="p-5 accent-blue">
         <Col />
         <Col md={8} xl={6}>
           <h5>Zaratan builds pioneering software for co-living, running on Slack.</h5>

@@ -28,6 +28,7 @@ export default function ({ images }) {
               mainText="Hearts"
               subText="Keeping It Honest"
               icon="&#x1f496;"
+              color="red"
             />
             <br></br>
             <SlackButton text="Install Now" url={installUrl} />
@@ -35,7 +36,7 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="red pt-5 px-5">
+      <Row className="accent-red pt-5 px-5">
         <Col />
         <Col md={10} xl={6}>
           <h5><b>Hearts is Zaratan's accountability tool</b>, helping people establish mutual expectations and work through conflicts.</h5>
@@ -51,7 +52,7 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="red pb-5 px-5">
+      <Row className="accent-red pb-5 px-5">
         <Col/>
         <Col md={5} xl={3}>
           <h5>&#x1f62d; Old Way</h5>

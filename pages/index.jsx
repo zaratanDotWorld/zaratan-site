@@ -15,6 +15,7 @@ export default function () {
             mainText="Zaratan"
             subText="Find Your Place"
             icon="&#x1F422;"
+            color="green"
           />
 
           <br></br>
@@ -22,7 +23,7 @@ export default function () {
         </Col>
         <Col />
       </Row>
-      <Row className="green p-5">
+      <Row className="accent-green p-5">
         <Col />
         <Col md={8} xl={6}>
           <h5>Zaratan is an emerging coliving company in Los Angeles. We build physical houses and pioneering software tools.</h5>

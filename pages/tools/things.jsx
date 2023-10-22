@@ -28,6 +28,7 @@ export default function ({ images }) {
               mainText="Things"
               subText="Keeping It Stocked"
               icon="&#x1f6d2;"
+              color="blue"
             />
             <br></br>
             <SlackButton text="Install Now" url={installUrl} />
@@ -35,7 +36,7 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="blue pt-5 px-5">
+      <Row className="accent-blue pt-5 px-5">
         <Col />
         <Col md={10} xl={6}>
           <h5><b>Things is Zaratan's purchasing tool</b>, helping people easily manage shared funds.</h5>
@@ -48,7 +49,7 @@ export default function ({ images }) {
         <Col />
       </Row>
 
-      <Row className="blue pb-5 px-5">
+      <Row className="accent-blue pb-5 px-5">
         <Col/>
         <Col md={5} xl={3}>
           <h5>&#x1f62d; Old Way</h5>
