@@ -15,7 +15,7 @@ export default function () {
             mainText="Zaratan"
             subText="Find Your Place"
             icon="&#x1F422;"
-            scale={35}
+            scale={30}
           />
 
           <br></br>
@@ -49,18 +49,16 @@ export default function () {
 
       <Row className="p-5">
         <Col />
-        <Col>
-            {/* Image Source: https://www.deviantart.com/rowye/art/Turtle-Island-483132909 */}
-            <Link href="https://en.wikipedia.org/wiki/Zaratan">
-              <Image
-                className="rounded border border-3"
-                src={zaratanPic}
-                alt="Image of a Zaratan"
-                width={320}
-                height={400}
-                style={{ margin: "auto", display: "block", opacity: "0.85"}}
-              />
-            </Link>
+        <Col md={8} xl={6}  style={{position:"relative", height:"500px"}}>
+          {/* Image Source: https://www.deviantart.com/rowye/art/Turtle-Island-483132909 */}
+          <Link href="https://en.wikipedia.org/wiki/Zaratan">
+            <Image
+              fill
+              src={zaratanPic}
+              alt="Image of a Zaratan"
+              style={{ margin: "auto", display: "block", opacity: "0.85", objectFit: "contain" }}
+            />
+          </Link>
         </Col>
         <Col />
       </Row>
