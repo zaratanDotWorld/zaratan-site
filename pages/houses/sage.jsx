@@ -1,9 +1,6 @@
-import { useState } from 'react';
+import { Container, Row, Col, Table, Button } from 'react-bootstrap';
 
-import { Container, Row, Col, Carousel, Table, Button } from 'react-bootstrap';
-
-import Image from 'next/image';
-
+import Carousel from '../../components/carousel';
 import Headpiece from '../../components/headpiece';
 
 import { getImages } from '../../utils/s3';
@@ -16,8 +13,6 @@ export async function getStaticProps() {
 
 export default function ({ images }) {
   const applyUrl = "https://zaratan.managebuilding.com/Resident/rental-application/new";
-
-  const [index, setIndex] = useState(0);
 
   return (
     <Container fluid>
@@ -83,27 +78,7 @@ export default function ({ images }) {
       <Row className="p-5">
         <Col />
         <Col md={8} xl={6}>
-          <Carousel
-            fade
-            interval={3600}
-            controls={false}
-            indicators={false}
-            activeIndex={index}
-            onClick={() => setIndex((index + 1) % images.length)}
-          >
-            {
-              images.map((imageUri, i) =>
-                <Carousel.Item key={i} style={{position:"relative", height:"500px"}}>
-                  <Image
-                    fill
-                    src={imageUri}
-                    alt="Picture of Sage House"
-                    style={{ objectFit: "contain" }}
-                  />
-                </Carousel.Item>
-              )
-            }
-          </Carousel>
+          <Carousel images={images} height={500} alt="Sage House photo" />
         </Col>
         <Col />
       </Row>

@@ -3,13 +3,13 @@ import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Headpiece from '../../components/headpiece';
-import IPhoneCarousel from '../../components/carousel';
+import Carousel from '../../components/carousel';
 import SlackButton from '../../components/slack';
 
 import { getImages } from '../../utils/s3';
 
 export async function getStaticProps() {
-  const regex = /public\/images\/mirror\/framed-mobile-things.*\.png/i;
+  const regex = /public\/images\/mirror\/framed-mobile-things.*\.jpg/i;
   const images = await getImages({ regex });
   return { props: { images } }
 }
@@ -76,8 +76,8 @@ export default function ({ images }) {
 
       <Row className="p-4">
         <Col />
-        <Col lg={10} xl={8}>
-          <IPhoneCarousel images={images} />
+        <Col lg={10} xl={8} xxl={6}>
+          <Carousel images={images} height={800} alt="Things screenshot" />
         </Col>
         <Col />
       </Row>
