@@ -15,8 +15,7 @@ export async function getStaticProps() {
 }
 
 export default function ({ images }) {
-  const installUrl = "https://slack.com/oauth/v2/authorize?client_id=1003435112487.4076729845777" +
-    "&scope=channels:join,chat:write,commands,users:read&user_scope=";
+  const installUrl = "https://things.mirror.zaratan.world/slack/install";
   const manualUrl = "https://github.com/zaratanDotWorld/mirror/wiki/Things";
 
   return (

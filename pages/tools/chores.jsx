@@ -15,8 +15,7 @@ export async function getStaticProps() {
 }
 
 export default function ({ images }) {
-  const installUrl = "https://slack.com/oauth/v2/authorize?client_id=1003435112487.1005562872163" +
-    "&scope=channels:join,chat:write,commands,users:read&user_scope=";
+  const installUrl = "https://chores.mirror.zaratan.world/slack/install";
   const manualUrl = "https://github.com/zaratanDotWorld/mirror/wiki/Chores";
 
   return (
