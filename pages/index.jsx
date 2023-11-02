@@ -26,7 +26,11 @@ export default function () {
       <Row className="accent-green p-5">
         <Col />
         <Col md={8} xl={6}>
-          <h5>Zaratan is an emerging coliving company in Los Angeles. We build physical houses and pioneering software tools.</h5>
+          <h5>
+            Zaratan is an emerging coliving company in Los Angeles.
+            We build <Link href="/houses/sage" className="text-decoration-none">physical houses</Link>
+            &nbsp;and <Link href="/tools" className="text-decoration-none">pioneering software tools</Link>.
+          </h5>
           <hr></hr>
           <p>We believe that:</p>
           <p>
@@ -40,8 +44,8 @@ export default function () {
 
           <p>
             We're looking for people who are <b>friendly, creative, and reliable</b>. We keep prices reasonable, and expect residents to help run their houses.
-            Meetings can be boring, so we made tools to make running a house as easy as playing a game.
-            If you can handle the freedom, this could be one of the best experiences of your life.
+            Meetings can be boring, so we made running a house as easy as playing a game.
+            If you accept the responsibility, this could be one of the best experiences of your life.
           </p>
         </Col>
         <Col />
