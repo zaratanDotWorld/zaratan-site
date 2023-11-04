@@ -19,7 +19,7 @@ export default function () {
           />
 
           <br></br>
-          <SignupForm text="Come on in" placeholder="~ email address ~" />
+          <SignupForm text="Get updates" placeholder="~ email address ~" />
         </Col>
         <Col />
       </Row>
