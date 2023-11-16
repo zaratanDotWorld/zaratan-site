@@ -41,7 +41,7 @@ export default function () {
             <li>And more to come</li>
           </ul>
 
-          <p>These tools contain the latest thinking in <b>ethical technology</b>, with four core principles:</p>
+          <p>These tools are privacy-preserving and contain the latest thinking in <b>ethical technology</b>, with four core principles:</p>
           <ul>
             <li>No managers or privileged roles</li>
             <li>Simple and intuitive inputs</li>

@@ -46,8 +46,9 @@ export default function ({ images }) {
             Folks co-create their list of chores, and they fine-tune priorities so that more points go to more important chores.
           </p>
           <p>
-            The system is dynamic and flexible, helping people orient around what they like best.
-            The best part? It happens like magic.
+            Chores helps folks spend less time doing chores, and less time talking about chores.
+            Dynamic and flexible, it helps people orient towards what they like best.
+            The best part? It works like magic.
           </p>
           <hr></hr>
         </Col>
