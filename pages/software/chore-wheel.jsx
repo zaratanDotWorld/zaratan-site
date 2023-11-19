@@ -15,13 +15,21 @@ export default function () {
         <Col />
         <Col md={8} xl={6}>
          <Headpiece
-            mainText="Tools"
-            subText="Making It Work"
-            icon="&#x1f4a0;"
+            mainText="Chore Wheel"
+            subText="Keep it Going"
+            // icon="☀️"
+            icon="&#x1F506;"
             color="blue"
           />
 
           <br></br>
+          <h6>
+            <b><Link href="/software/chores">Chores</Link></b>
+            &nbsp;·&nbsp;
+            <b><Link href="/software/hearts">Hearts</Link></b>
+            &nbsp;·&nbsp;
+            <b><Link href="/software/things">Things</Link></b>
+          </h6>
           <p>Currently in <b>open beta</b></p>
           <Button variant="outline-primary" size="md" href={mailchimpUrl}>Get updates</Button>
         </Col>
@@ -31,17 +39,17 @@ export default function () {
       <Row className="p-5 accent-blue">
         <Col />
         <Col md={8} xl={6}>
-          <h5>Zaratan builds pioneering software for co-living, running on Slack.</h5>
+          <h5><b>Chore Wheel</b> is pioneering software for co-living, running on Slack.</h5>
           <hr></hr>
-          <p>Developed by <b>economists and game designers</b>, Zaratan creates open-source tools to help people share space:</p>
+          <p>Developed by <b>economists</b> and <b>game designers</b>, Chore Wheel is a family of tools helping people share space:</p>
           <ul>
-            <li><b><Link href="/tools/chores" className="text-decoration-none">Chores</Link></b> for keeping it clean</li>
-            <li><b><Link href="/tools/hearts" className="text-decoration-none">Hearts</Link></b> for mutual accountability</li>
-            <li><b><Link href="/tools/things" className="text-decoration-none">Things</Link></b> for bulk purchasing</li>
+            <li><b><Link href="/software/chores" className="text-decoration-none">Chores</Link></b> for keeping it clean</li>
+            <li><b><Link href="/software/hearts" className="text-decoration-none">Hearts</Link></b> for mutual accountability</li>
+            <li><b><Link href="/software/things" className="text-decoration-none">Things</Link></b> for bulk purchasing</li>
             <li>And more to come</li>
           </ul>
 
-          <p>These tools are privacy-preserving and contain the latest thinking in <b>ethical technology</b>, with four core principles:</p>
+          <p>Chore Wheel is <b>open-source</b> and <b>privacy-preserving</b>. It contains the latest thinking in <b>ethical technology</b>, with four core principles:</p>
           <ul>
             <li>No managers or privileged roles</li>
             <li>Simple and intuitive inputs</li>
