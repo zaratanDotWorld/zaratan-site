@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { Container, Row, Col, Table, Button } from 'react-bootstrap';
 
 import Carousel from '../../components/carousel';
@@ -45,7 +47,7 @@ export default function ({ images }) {
               guest room,
               and four full bathrooms.
             </p>
-
+            <p>A proud supporter of the  <Link href="https://tongva.networkforgood.com/">Tongva Conservancy</Link></p>
             <br></br>
             <Button variant="outline-danger" size="lg" href={applyUrl}>Apply Now</Button>
           </div>

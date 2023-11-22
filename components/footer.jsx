@@ -8,8 +8,6 @@ export default function () {
       <Link href="/privacy.html" style={{ fontSize: "14px" }}>Privacy Policy</Link>
       &nbsp;·&nbsp;
       <Link href="mailto:support@zaratan.world" style={{ fontSize: "14px" }}>Contact Support</Link>
-      &nbsp;·&nbsp;
-      <Link href="https://www.instagram.com/zaratan.world/" style={{ fontSize: "14px" }}>Instagram</Link>
     </div>
   )
 }

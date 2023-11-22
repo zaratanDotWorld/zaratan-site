@@ -41,7 +41,7 @@ export default function () {
         <Col md={8} xl={6}>
           <h5><b>Chore Wheel</b> is pioneering software for co-living, running on Slack.</h5>
           <hr></hr>
-          <p>Developed by <b>economists</b> and <b>game designers</b>, Chore Wheel is a family of tools helping people share space:</p>
+          <p>Created by <b>economists</b> and <b>game designers</b>, Chore Wheel is a family of tools helping people share space:</p>
           <ul>
             <li><b><Link href="/software/chores" className="text-decoration-none">Chores</Link></b> for keeping it clean</li>
             <li><b><Link href="/software/hearts" className="text-decoration-none">Hearts</Link></b> for mutual accountability</li>
@@ -57,7 +57,8 @@ export default function () {
             <li>Always-on, asynchronous processes</li>
           </ul>
 
-          <br></br>
+          <p>Development was supported by the <b>Open-Source Software</b> (2x), <b>Governance Research</b>, and <b>Metacrisis</b> rounds of <b><Link href="https://grants.gitcoin.co/">Gitcoin Grants</Link></b></p>
+
           <div className="center">
             <Link href="https://archive.org/details/kronovet-metagov-20230329">Watch the talk</Link> · <Link href="https://github.com/zaratanDotWorld/mirror">See the code</Link>
           </div>

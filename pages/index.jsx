@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import Headpiece from '../components/headpiece';
 import zaratanPic from "../public/images/zaratan-art.jpg";
+import instagramLogo from "../public/instagram.png";
 
 export default function () {
   return (
@@ -47,6 +48,17 @@ export default function () {
             Meetings can be boring, so we made running a house as easy as playing a game.
             If you accept the responsibility, this could be one of the best experiences of your life.
           </p>
+
+          <br></br>
+          <Link href="https://www.instagram.com/zaratan.world/">
+            <Image
+              width="40"
+              height="40"
+              src={instagramLogo}
+              alt="Instagram logo"
+              style={{ margin: "auto", display: "block" }}
+            />
+          </Link>
         </Col>
         <Col />
       </Row>
