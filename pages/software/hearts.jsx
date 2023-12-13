@@ -7,6 +7,7 @@ import Carousel from '../../components/carousel';
 import SlackButton from '../../components/slack';
 
 import { getImages } from '../../utils/s3';
+import { docsUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/mirror\/framed-mobile-hearts.*\.jpg/i;
@@ -16,7 +17,6 @@ export async function getStaticProps() {
 
 export default function ({ images }) {
   const installUrl = "https://hearts.mirror.zaratan.world/slack/install";
-  const manualUrl = "https://github.com/zaratanDotWorld/mirror/wiki/Hearts";
 
   return (
     <Container fluid>
@@ -86,7 +86,7 @@ export default function ({ images }) {
       <Row className="pb-4 center">
         <Col>
           <p style={{ fontSize: "1.5em" }}>
-            &#x1f449; <Link href={manualUrl}>Read the manual</Link> &#x1f448;
+            &#x1f449; <Link href={docsUrl}>Read the manual</Link> &#x1f448;
           </p>
         </Col>
       </Row>

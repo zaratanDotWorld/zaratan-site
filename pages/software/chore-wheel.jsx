@@ -3,6 +3,8 @@ import { Container, Row, Col, Table, Button } from 'react-bootstrap';
 
 import Headpiece from '../../components/headpiece';
 
+import { repoUrl, docsUrl } from '../../utils/constants';
+
 export default function () {
   // const roommateUrl = "https://buy.stripe.com/7sI5lwcjC3FXabKeUW";
   // const familyUrl = "https://buy.stripe.com/fZeaFQ97q3FXabK28b";
@@ -23,6 +25,8 @@ export default function () {
           />
 
           <br></br>
+          <p>Currently in <b>open beta</b></p>
+          <h5>Install now</h5>
           <h6>
             <b><Link href="/software/chores">Chores</Link></b>
             &nbsp;·&nbsp;
@@ -30,7 +34,7 @@ export default function () {
             &nbsp;·&nbsp;
             <b><Link href="/software/things">Things</Link></b>
           </h6>
-          <p>Currently in <b>open beta</b></p>
+          <br></br>
           <Button variant="outline-primary" size="md" href={mailchimpUrl}>Get updates</Button>
         </Col>
         <Col />
@@ -60,7 +64,11 @@ export default function () {
           <p>Development was supported by the <b>Open-Source Software</b> (2x), <b>Governance Research</b>, and <b>Metacrisis</b> rounds of <b><Link href="https://grants.gitcoin.co/">Gitcoin Grants</Link></b></p>
 
           <div className="center">
-            <Link href="https://archive.org/details/kronovet-metagov-20230329">Watch the talk</Link> · <Link href="https://github.com/zaratanDotWorld/mirror">See the code</Link>
+            <Link href="https://archive.org/details/kronovet-metagov-20230329">Watch the talk</Link>
+            &nbsp;·&nbsp;
+            <Link href="https://github.com/zaratanDotWorld/mirror">See the code</Link>
+            &nbsp;·&nbsp;
+            <Link href={docsUrl}>Read the docs</Link>
           </div>
         </Col>
         <Col />
