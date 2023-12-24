@@ -6,6 +6,7 @@ import Carousel from '../../components/carousel';
 import Headpiece from '../../components/headpiece';
 
 import { getImages } from '../../utils/s3';
+import { nbcUrl, supernuclearUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/sage\/mls\/.*\.jpg/i;
@@ -31,8 +32,10 @@ export default function ({ images }) {
           <br></br>
           <div className="center">
             <p>
+              <em>As seen on <Link href={nbcUrl}>NBC4 News</Link> & <Link href={supernuclearUrl}>Supernuclear</Link></em>
+              <br></br>
+              <br></br>
               A beautifully-restored 1905 Craftsman, in the heart of vibrant <b>Highland Park, Los Angeles</b>.
-
               <br></br>
               <br></br>
               This nine-bedroom home features a
