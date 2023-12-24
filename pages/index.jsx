@@ -30,7 +30,7 @@ export default function () {
           <h5>
             Zaratan is an emerging coliving company in Los Angeles.
             We build <Link href="/houses/sage" className="text-decoration-none">physical houses</Link>
-            &nbsp;and <Link href="/software/chore-wheel" className="text-decoration-none">pioneering software tools</Link>.
+            &nbsp;and <Link href="/software/chorewheel" className="text-decoration-none">pioneering software tools</Link>.
           </h5>
           <hr></hr>
           <p>We believe that:</p>

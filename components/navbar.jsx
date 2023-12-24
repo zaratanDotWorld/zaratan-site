@@ -15,7 +15,7 @@ export default function () {
               <NavDropdown.Item href="/houses/sage">Sage House</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Software" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/software/chore-wheel">Chore Wheel</NavDropdown.Item>
+              <NavDropdown.Item href="/software/chorewheel">Chore Wheel</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/software/chores">&nbsp;&nbsp; Chores</NavDropdown.Item>
               <NavDropdown.Item href="/software/hearts">&nbsp;&nbsp; Hearts</NavDropdown.Item>
