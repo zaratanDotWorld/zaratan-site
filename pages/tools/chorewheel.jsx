@@ -28,11 +28,11 @@ export default function () {
           <p>Currently in <b>open beta</b></p>
           <h5>Install now</h5>
           <h6>
-            <b><Link href="/software/chores">Chores</Link></b>
+            <b><Link href="/tools/chores">Chores</Link></b>
             &nbsp;·&nbsp;
-            <b><Link href="/software/hearts">Hearts</Link></b>
+            <b><Link href="/tools/hearts">Hearts</Link></b>
             &nbsp;·&nbsp;
-            <b><Link href="/software/things">Things</Link></b>
+            <b><Link href="/tools/things">Things</Link></b>
           </h6>
           <br></br>
           <Button variant="outline-primary" size="md" href={mailchimpUrl}>Get updates</Button>
@@ -47,9 +47,9 @@ export default function () {
           <hr></hr>
           <p>Created by <b>economists</b> and <b>game designers</b>, Chore Wheel is a family of tools helping people share space:</p>
           <ul>
-            <li><b><Link href="/software/chores" className="text-decoration-none">Chores</Link></b> for keeping it clean</li>
-            <li><b><Link href="/software/hearts" className="text-decoration-none">Hearts</Link></b> for mutual accountability</li>
-            <li><b><Link href="/software/things" className="text-decoration-none">Things</Link></b> for bulk purchasing</li>
+            <li><b><Link href="/tools/chores" className="text-decoration-none">Chores</Link></b> for keeping it clean</li>
+            <li><b><Link href="/tools/hearts" className="text-decoration-none">Hearts</Link></b> for mutual accountability</li>
+            <li><b><Link href="/tools/things" className="text-decoration-none">Things</Link></b> for bulk purchasing</li>
             <li>And more to come</li>
           </ul>
 

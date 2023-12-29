@@ -14,12 +14,12 @@ export default function () {
               <NavDropdown.Header>Highland Park</NavDropdown.Header>
               <NavDropdown.Item href="/houses/sage">Sage House</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Software" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/software/chorewheel">Chore Wheel</NavDropdown.Item>
+            <NavDropdown title="Tools" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/tools/chorewheel">Chore Wheel</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/software/chores">&nbsp;&nbsp; Chores</NavDropdown.Item>
-              <NavDropdown.Item href="/software/hearts">&nbsp;&nbsp; Hearts</NavDropdown.Item>
-              <NavDropdown.Item href="/software/things">&nbsp;&nbsp; Things</NavDropdown.Item>
+              <NavDropdown.Item href="/tools/chores">&nbsp;&nbsp; Chores</NavDropdown.Item>
+              <NavDropdown.Item href="/tools/hearts">&nbsp;&nbsp; Hearts</NavDropdown.Item>
+              <NavDropdown.Item href="/tools/things">&nbsp;&nbsp; Things</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
