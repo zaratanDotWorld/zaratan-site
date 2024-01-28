@@ -3,13 +3,12 @@ import { Container, Row, Col, Table, Button } from 'react-bootstrap';
 
 import Headpiece from '../../components/headpiece';
 
-import { repoUrl, docsUrl } from '../../utils/constants';
+import { repoUrl, docsUrl, metagovUrl, mailchimpUrl } from '../../utils/constants';
 
 export default function () {
   // const roommateUrl = "https://buy.stripe.com/7sI5lwcjC3FXabKeUW";
   // const familyUrl = "https://buy.stripe.com/fZeaFQ97q3FXabK28b";
   // const communityUrl = "https://buy.stripe.com/dR6g0a4Radgx4Rq8wA";
-  const mailchimpUrl = "https://mailchi.mp/a69de84158a5/app-interest";
 
   return (
     <Container fluid>
@@ -64,9 +63,9 @@ export default function () {
           <p>Development was supported by the <b>Open-Source Software</b> (2x), <b>Governance Research</b>, and <b>Metacrisis</b> rounds of <b><Link href="https://grants.gitcoin.co/">Gitcoin Grants</Link></b></p>
 
           <div className="center">
-            <Link href="https://archive.org/details/kronovet-metagov-20230329">Watch the talk</Link>
+            <Link href={metagovUrl}>Watch the talk</Link>
             &nbsp;·&nbsp;
-            <Link href="https://github.com/zaratanDotWorld/mirror">See the code</Link>
+            <Link href={repoUrl}>See the code</Link>
             &nbsp;·&nbsp;
             <Link href={docsUrl}>Read the docs</Link>
           </div>

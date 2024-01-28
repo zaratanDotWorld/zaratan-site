@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
+
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Headpiece from '../components/headpiece';
 import zaratanPic from "../public/images/zaratan-art.jpg";
 import instagramLogo from "../public/instagram.png";
+import { instagramUrl, zaratanUrl } from '../utils/constants';
 
 export default function () {
   return (
@@ -50,7 +52,7 @@ export default function () {
           </p>
 
           <br></br>
-          <Link href="https://www.instagram.com/zaratan.world/">
+          <Link href={instagramUrl}>
             <Image
               width="40"
               height="40"
@@ -67,7 +69,7 @@ export default function () {
         <Col />
         <Col md={8} xl={6}  style={{position:"relative", height:"500px"}}>
           {/* Image Source: https://www.deviantart.com/rowye/art/Turtle-Island-483132909 */}
-          <Link href="https://en.wikipedia.org/wiki/Zaratan">
+          <Link href={zaratanUrl}>
             <Image
               fill
               src={zaratanPic}

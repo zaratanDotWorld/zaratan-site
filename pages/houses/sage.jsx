@@ -6,7 +6,7 @@ import Carousel from '../../components/carousel';
 import Headpiece from '../../components/headpiece';
 
 import { getImages } from '../../utils/s3';
-import { nbcUrl, supernuclearUrl } from '../../utils/constants';
+import { applyUrl, nbcUrl, supernuclearUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/sage\/mls\/.*\.jpg/i;
@@ -15,8 +15,6 @@ export async function getStaticProps() {
 }
 
 export default function ({ images }) {
-  const applyUrl = "https://zaratan.managebuilding.com/Resident/rental-application/new";
-
   return (
     <Container fluid>
       <Row className="p-5">
