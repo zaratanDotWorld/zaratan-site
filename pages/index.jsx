@@ -22,7 +22,7 @@ export default function () {
           />
 
           <br></br>
-          <SignupForm text="Get updates" placeholder="~ email address ~" />
+          <SignupForm text="Get our newsletter" placeholder="~ email address ~" />
         </Col>
         <Col />
       </Row>

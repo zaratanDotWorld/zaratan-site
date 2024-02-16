@@ -33,8 +33,6 @@ export default function () {
             &nbsp;·&nbsp;
             <b><Link href="/tools/things">Things</Link></b>
           </h6>
-          <br></br>
-          <Button variant="outline-primary" size="md" href={mailchimpUrl}>Get updates</Button>
         </Col>
         <Col />
       </Row>

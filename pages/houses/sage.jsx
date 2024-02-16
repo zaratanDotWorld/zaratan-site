@@ -36,9 +36,10 @@ export default function ({ images }) {
               A beautifully-restored 1905 Craftsman, in the heart of vibrant <b>Highland Park, Los Angeles</b>.
               <br></br>
               <br></br>
-              This nine-bedroom home features a
-              restaurant-style kitchen,
-              woodworked dining room,
+              This nine-bedroom home features
+              hardwood floors,
+              a restaurant-style kitchen,
+              elegant dining room,
               sunny living room,
               quiet library,
               upstairs deck,
@@ -50,7 +51,7 @@ export default function ({ images }) {
             </p>
             <p>A proud supporter of the  <Link href="https://tongva.networkforgood.com/">Tongva Conservancy</Link></p>
             <br></br>
-            <Button variant="outline-danger" size="lg" href={applyUrl}>Apply Now</Button>
+            <Button variant="outline-danger" size="md" href={applyUrl}>Apply Now</Button>
           </div>
         </Col>
         <Col />

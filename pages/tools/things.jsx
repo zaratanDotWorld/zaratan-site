@@ -84,7 +84,7 @@ export default function ({ images }) {
       <Row className="pb-4 center">
         <Col>
           <p style={{ fontSize: "1.5em" }}>
-            &#x1f449; <Link href={docsUrl}>Read the manual</Link> &#x1f448;
+            &#x1f449; <Link href={docsUrl}>Read the docs</Link> &#x1f448;
           </p>
         </Col>
       </Row>

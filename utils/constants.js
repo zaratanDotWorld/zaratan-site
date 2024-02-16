@@ -1,6 +1,7 @@
-// Admin
+// General
 export const applyUrl = "https://zaratan.managebuilding.com/Resident/rental-application/new";
 export const instagramUrl = "https://www.instagram.com/zaratan.world";
+export const kronosapiensUrl ="https://kronosapiens.github.io"
 
 // Codebase
 export const repoUrl = "https://github.com/zaratanDotWorld/choreWheel";
