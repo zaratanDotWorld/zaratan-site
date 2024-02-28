@@ -34,6 +34,9 @@ export default function () {
             We build <Link href="/houses/sage" className="text-decoration-none">physical houses</Link>
             &nbsp;and <Link href="/tools/chorewheel" className="text-decoration-none">pioneering software tools</Link>.
           </h5>
+          <h5>
+            Our mission is the creation of beautiful and naturally-affordable housing through creative organization and adaptive re-use.
+          </h5>
           <hr></hr>
           <p>We believe that:</p>
           <p>
@@ -48,7 +51,7 @@ export default function () {
           <p>
             We're looking for people who are <b>friendly, creative, and reliable</b>. We keep prices reasonable, and expect residents to help run their houses.
             Meetings can be boring, so we made running a house as easy as playing a game.
-            If you accept the responsibility, this could be one of the best experiences of your life.
+            If you accept the challenge, this could be one of the best experiences of your life.
           </p>
 
           <br></br>
