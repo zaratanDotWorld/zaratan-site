@@ -13,6 +13,7 @@ export default function () {
             <NavDropdown title="Houses" id="basic-nav-dropdown">
               <NavDropdown.Header>Highland Park</NavDropdown.Header>
               <NavDropdown.Item href="/houses/sage">Sage House</NavDropdown.Item>
+              <NavDropdown.Item href="/houses/cactus">Cactus Cottage</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Tools" id="basic-nav-dropdown">
               <NavDropdown.Item href="/tools/chorewheel">Chore Wheel</NavDropdown.Item>

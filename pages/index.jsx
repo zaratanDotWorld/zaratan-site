@@ -16,7 +16,7 @@ export default function () {
         <Col>
           <Headpiece
             mainText="Zaratan"
-            subText="Find Your Place"
+            subText="Building Better Worlds"
             icon="&#x1F422;"
             color="green"
           />
@@ -50,8 +50,8 @@ export default function () {
 
           <p>
             We're looking for people who are <b>friendly, creative, and reliable</b>. We keep prices reasonable, and expect residents to help run their houses.
-            Meetings can be boring, so we made running a house as easy as playing a game.
-            If you accept the challenge, this could be one of the best experiences of your life.
+            Meetings can be boring, so we made living here as easy as playing a game.
+            If you can handle the responsibility, this could be one of the best experiences of your life.
           </p>
 
           <br></br>

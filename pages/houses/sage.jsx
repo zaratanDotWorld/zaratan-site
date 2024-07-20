@@ -22,12 +22,22 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <Headpiece
             mainText="Sage House"
-            subText="Where It Started"
+            subText="Find Your Place"
             icon="&#x1FAB4;"
             color="red"
           />
 
           <br></br>
+          <div className="center">
+            <Button variant="outline-danger" size="md" href={applyUrl}>Apply Now</Button>
+          </div>
+        </Col>
+        <Col />
+      </Row>
+
+      <Row className="p-5 accent-red center">
+        <Col />
+        <Col md={8} xl={6}>
           <div className="center">
             <p>
               <em>As seen on <Link href={nbcUrl}>NBC4 News</Link> & <Link href={supernuclearUrl}>Supernuclear</Link></em>
@@ -50,16 +60,14 @@ export default function ({ images }) {
               and four full bathrooms.
             </p>
             <p>A proud supporter of the  <Link href="https://tongva.networkforgood.com/">Tongva Conservancy</Link></p>
-            <br></br>
-            <Button variant="outline-danger" size="md" href={applyUrl}>Apply Now</Button>
           </div>
-        </Col>
-        <Col />
-      </Row>
 
-      <Row className="p-5 accent-red center">
-        <Col />
-        <Col md={8} xl={6}>
+          <br></br>
+          <hr></hr>
+          <br></br>
+
+          <h5>Pricing Comparison</h5>
+
           <Table hover responsive style={{"--bs-table-bg": "rgba(0, 0, 0, 0.0)"}}>
             <thead>
               <tr><th></th><th>Sage</th><th>Craigslist</th></tr>
