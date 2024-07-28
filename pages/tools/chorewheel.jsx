@@ -2,8 +2,9 @@ import Link from "next/link";
 import { Container, Row, Col, Table, Button } from 'react-bootstrap';
 
 import Headpiece from '../../components/headpiece';
+import Video from '../../components/video';
 
-import { repoUrl, docsUrl, metagovUrl, mailchimpUrl } from '../../utils/constants';
+import { repoUrl, docsUrl, metagovUrl, mailchimpUrl, choreWheelUrl } from '../../utils/constants';
 
 export default function () {
   // const roommateUrl = "https://buy.stripe.com/7sI5lwcjC3FXabKeUW";
@@ -33,6 +34,10 @@ export default function () {
             &nbsp;·&nbsp;
             <b><Link href="/tools/things">Things</Link></b>
           </h6>
+
+          <br></br>
+
+          <Video videoSrc={choreWheelUrl} videoType={"video/mp4"} />
         </Col>
         <Col />
       </Row>

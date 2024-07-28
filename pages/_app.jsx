@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/global.css';
 import '../styles/mailchimp.css';
+import '../styles/video.css';
 
 export  default function ({ Component, pageProps }) {
   const fontsUrl = "https://fonts.googleapis.com/css" +

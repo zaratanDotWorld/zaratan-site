@@ -4,9 +4,10 @@ import { Container, Row, Col, Table, Button } from 'react-bootstrap';
 
 import Carousel from '../../components/carousel';
 import Headpiece from '../../components/headpiece';
+import Video from '../../components/video';
 
 import { getImages } from '../../utils/s3';
-import { applyUrl, nbcUrl, supernuclearUrl } from '../../utils/constants';
+import { applyUrl, nbcUrl, joysOfSageUrl, supernuclearUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/sage\/mls\/.*\.jpg/i;
@@ -28,9 +29,14 @@ export default function ({ images }) {
           />
 
           <br></br>
+
           <div className="center">
             <Button variant="outline-danger" size="md" href={applyUrl}>Apply Now</Button>
           </div>
+
+          <br></br>
+
+          <Video videoSrc={joysOfSageUrl} videoType={"video/mp4"} />
         </Col>
         <Col />
       </Row>
