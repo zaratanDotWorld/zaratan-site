@@ -7,7 +7,7 @@ import Carousel from '../../components/carousel';
 import SlackButton from '../../components/slack';
 
 import { getImages } from '../../utils/s3';
-import { docsUrl } from '../../utils/constants';
+import { docsUrl, heartsInstallUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/mirror\/framed-mobile-hearts.*\.jpg/i;
@@ -16,8 +16,6 @@ export async function getStaticProps() {
 }
 
 export default function ({ images }) {
-  const installUrl = "https://hearts.mirror.zaratan.world/slack/install";
-
   return (
     <Container fluid>
       <Row className="p-5 center">
@@ -30,7 +28,7 @@ export default function ({ images }) {
               color="red"
             />
             <br></br>
-            <SlackButton text="Install Now" url={installUrl} />
+            <SlackButton text="Install Now" url={heartsInstallUrl} />
         </Col>
         <Col />
       </Row>
@@ -44,8 +42,8 @@ export default function ({ images }) {
             When conflicts arise, and folks are unable to work things out amongst themselves, the system can support a fair resolution.
           </p>
           <p>
-            Folks lose hearts for not doing chores, but earn them back over time.
-            You can also give "karma" to someone going the extra mile, which gets them bonus hearts.
+            People lose hearts for not doing chores, but earn them back over time.
+            You give good karma to folks going the extra mile, earning them bonus hearts.
           </p>
           <hr></hr>
         </Col>

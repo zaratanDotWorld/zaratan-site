@@ -7,7 +7,7 @@ import Headpiece from '../../components/headpiece';
 import Video from '../../components/video';
 
 import { getImages } from '../../utils/s3';
-import { applyUrl, nbcUrl, joysOfSageUrl, supernuclearUrl } from '../../utils/constants';
+import { applyUrl, nbcUrl, joysOfSageUrl, supernuclearUrl, structuresUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/sage\/mls\/.*\.jpg/i;
@@ -46,7 +46,7 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <div className="center">
             <p>
-              <em>As seen on <Link href={nbcUrl}>NBC4 News</Link> & <Link href={supernuclearUrl}>Supernuclear</Link></em>
+              <em>As seen on <Link href={nbcUrl}>NBC4</Link>, <Link href={supernuclearUrl}>Supernuclear</Link>, and <Link href={structuresUrl}>SSRN</Link></em>
               <br></br>
               <br></br>
               A beautifully-restored 1905 Craftsman, in the heart of vibrant <b>Highland Park, Los Angeles</b>.

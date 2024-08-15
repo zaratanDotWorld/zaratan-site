@@ -35,7 +35,7 @@ export default function () {
             &nbsp;and <Link href="/tools/chorewheel" className="text-decoration-none">pioneering software tools</Link>.
           </h5>
           <h5>
-            Our mission is the creation of beautiful and naturally-affordable housing through creative organization and adaptive re-use.
+            Our mission is the creation of beautiful and naturally-affordable housing through creative organization and adaptive reuse.
           </h5>
           <hr></hr>
           <p>We believe that:</p>
@@ -45,13 +45,13 @@ export default function () {
             <b>Community</b> cannot be bought &#x2013;&nbsp;
             <b>Rules</b> can be simple &#x2013;&nbsp;
             <b>Work</b> should be valued &#x2013;&nbsp;
-            <b>Conservation</b> starts at home.
+            <b>Conservation</b> starts local.
           </p>
 
           <p>
             We're looking for people who are <b>friendly, creative, and reliable</b>. We keep prices reasonable, and expect residents to help run their houses.
             Meetings can be boring, so we made living here as easy as playing a game.
-            If you can handle the responsibility, this could be one of the best experiences of your life.
+            Embrace the responsibility, and this could be one of the best experiences of your life.
           </p>
 
           <br></br>

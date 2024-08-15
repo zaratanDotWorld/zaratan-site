@@ -7,7 +7,7 @@ import Carousel from '../../components/carousel';
 import SlackButton from '../../components/slack';
 
 import { getImages } from '../../utils/s3';
-import { docsUrl } from '../../utils/constants';
+import { docsUrl, thingsInstallUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/mirror\/framed-mobile-things.*\.jpg/i;
@@ -16,8 +16,6 @@ export async function getStaticProps() {
 }
 
 export default function ({ images }) {
-  const installUrl = "https://things.mirror.zaratan.world/slack/install";
-
   return (
     <Container fluid>
       <Row className="p-5 center">
@@ -30,7 +28,7 @@ export default function ({ images }) {
               color="blue"
             />
             <br></br>
-            <SlackButton text="Install Now" url={installUrl} />
+            <SlackButton text="Install Now" url={thingsInstallUrl} />
         </Col>
         <Col />
       </Row>

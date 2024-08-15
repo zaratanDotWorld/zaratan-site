@@ -7,7 +7,7 @@ import Carousel from '../../components/carousel';
 import SlackButton from '../../components/slack';
 
 import { getImages } from '../../utils/s3';
-import { docsUrl } from '../../utils/constants';
+import { docsUrl, choresInstallUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/mirror\/framed-mobile-chores.*\.jpg/i;
@@ -16,8 +16,6 @@ export async function getStaticProps() {
 }
 
 export default function ({ images }) {
-  const installUrl = "https://chores.mirror.zaratan.world/slack/install";
-
   return (
     <Container fluid>
       <Row className="p-5 center">
@@ -30,7 +28,7 @@ export default function ({ images }) {
               color="green"
             />
             <br></br>
-            <SlackButton text="Install Now" url={installUrl} />
+            <SlackButton text="Install Now" url={choresInstallUrl} />
         </Col>
         <Col />
       </Row>
@@ -38,10 +36,10 @@ export default function ({ images }) {
       <Row className="accent-green pt-5 px-5">
         <Col />
         <Col md={10} xl={6}>
-          <h5><b>Chores is Zaratan's crown jewel</b>, making dirty dishes and passive-aggressive sticky notes a thing of the past.</h5>
+          <h5><b>Chores is Zaratan's major contribution</b>, making dirty dishes and passive-aggressive sticky notes a thing of the past.</h5>
           <p>
-            Chores is a chore wheel for the 21st century, helping everyone do their part, on their terms.
-            Instead of restrictive schedules or inconsistent "bragging boards," people do chores for points.
+            We bring chores into the 21st century by helping everyone do their part, on their terms.
+            Instead of restrictive schedules or unreliable bragging boards, people do chores for points.
             Everyone owes 100 points per month, and the longer a chore goes undone, the more points it's worth.
             Folks co-create their list of chores, and they fine-tune priorities so that more points go to more important chores.
           </p>

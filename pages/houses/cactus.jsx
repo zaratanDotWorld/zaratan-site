@@ -22,8 +22,8 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <Headpiece
             mainText="Cactus Cottage"
-            subText="Your Urban Sanctuary"
-            icon="🌵"
+            subText="An Urban Sanctuary"
+            icon="&#x1F335;"
             color="blue"
           />
 
