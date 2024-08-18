@@ -1,16 +1,21 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Alert, Container, Row, Col } from 'react-bootstrap';
 
 import Headpiece from '../components/headpiece';
 import zaratanPic from "../public/images/zaratan-art.jpg";
 import instagramLogo from "../public/instagram.png";
-import { instagramUrl, zaratanUrl } from '../utils/constants';
+import { instagramUrl, zaratanUrl, structuresUrl } from '../utils/constants';
 
 export default function () {
   return (
     <Container fluid>
+      <br></br>
+      <Alert variant="success" className="center" dismissible>
+        Read our <Alert.Link href={structuresUrl}>peer-reviewed case study</Alert.Link> of Chore Wheel and Sage House
+      </Alert>
+
       <Row className="p-5">
         <Col />
         <Col>

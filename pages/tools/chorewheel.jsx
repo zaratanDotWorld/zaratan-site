@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Container, Row, Col, Table, Button } from 'react-bootstrap';
+import { Alert, Container, Row, Col, Table, Button } from 'react-bootstrap';
 
 import Carousel from '../../components/carousel';
 import Headpiece from '../../components/headpiece';
@@ -34,6 +34,11 @@ export async function getStaticProps() {
 export default function ({ images }) {
   return (
     <Container fluid>
+      <br></br>
+      <Alert variant="success" className="center" dismissible>
+        Read our <Alert.Link href={structuresUrl}>peer-reviewed case study</Alert.Link> of Chore Wheel and Sage House
+      </Alert>
+
       <Row className="p-5 center">
         <Col />
         <Col md={8} xl={6}>
