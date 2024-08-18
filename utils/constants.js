@@ -3,10 +3,12 @@ export const applyUrl = "https://zaratan.managebuilding.com/Resident/rental-appl
 export const instagramUrl = "https://www.instagram.com/zaratan.world";
 export const kronosapiensUrl ="https://kronosapiens.github.io"
 export const loginUrl = "https://zaratan.managebuilding.com/Resident/portal";
+export const blogUrl = "https://blog.zaratan.world"
 
 // Codebase
 export const repoUrl = "https://github.com/zaratanDotWorld/choreWheel";
 export const docsUrl = "https://docs.chorewheel.zaratan.world/";
+export const gettingStartedUrl = docsUrl + "en/latest/overview/getting-started.html";
 export const mailchimpUrl = "https://mailchi.mp/a69de84158a5/app-interest";
 
 export const choresInstallUrl = "https://chores.mirror.zaratan.world/slack/install";

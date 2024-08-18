@@ -10,6 +10,7 @@ import { getImages } from '../../utils/s3';
 import {
   repoUrl,
   docsUrl,
+  gettingStartedUrl,
   metagovUrl,
   choreWheelUrl,
   structuresUrl,
@@ -46,16 +47,7 @@ export default function ({ images }) {
 
           <br></br>
           <p>Currently in <b>open beta</b></p>
-          <h5>Install now!</h5>
-          <h5>
-            &#x2728;&nbsp;
-            <b><Link href="/tools/chores">Chores</Link></b>
-            &nbsp;·&nbsp;
-            <b><Link href="/tools/hearts">Hearts</Link></b>
-            &nbsp;·&nbsp;
-            <b><Link href="/tools/things">Things</Link></b>
-            &nbsp;&#x2728;
-          </h5>
+          <h5>&#x2728;&nbsp;<Link href={gettingStartedUrl}>Get started now!</Link>&nbsp;&#x2728;</h5>
 
           <br></br>
 

@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { blogUrl } from '../utils/constants';
 
 export default function () {
   return (
@@ -19,6 +20,7 @@ export default function () {
               <NavDropdown.Item href="/tools/hearts">&nbsp;&nbsp;&nbsp; &#x1f496; Hearts</NavDropdown.Item>
               <NavDropdown.Item href="/tools/things">&nbsp;&nbsp;&nbsp; &#x1f6d2; Things</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href={blogUrl}>&#x1F517; Blog</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {/* <LoginButton /> */}
