@@ -7,7 +7,7 @@ import Carousel from '../../components/carousel';
 import SlackButton from '../../components/slack';
 
 import { getImages } from '../../utils/s3';
-import { docsUrl, choresInstallUrl } from '../../utils/constants';
+import { choresInstallUrl, quickstartUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/mirror\/framed-mobile-chores.*\.jpg/i;
@@ -23,7 +23,7 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <Headpiece
               mainText="Chores"
-              subText="Keep It Clean"
+              subText="Clean Made Easier"
               icon="&#x1f9e4;"
               color="green"
             />
@@ -36,17 +36,16 @@ export default function ({ images }) {
       <Row className="accent-green pt-5 px-5">
         <Col />
         <Col md={10} xl={6}>
-          <h5><b>Chores is Zaratan's major contribution</b>, making dirty dishes and passive-aggressive sticky notes a thing of the past.</h5>
-          <p>
-            We bring chores into the 21st century by helping everyone do their part, on their terms.
-            Instead of restrictive schedules or unreliable bragging boards, people do chores for points.
-            Everyone owes 100 points per month, and the longer a chore goes undone, the more points it's worth.
-            Folks co-create their list of chores, and they fine-tune priorities so that more points go to more important chores.
-          </p>
+          <h5><b>Chores is Chore Wheel's chore system</b>, making dirty dishes and passive-aggressive sticky notes a thing of the past.</h5>
           <p>
             Chores helps folks spend less time doing chores, and less time talking about chores.
-            Dynamic and flexible, it helps people orient towards what they like best.
-            The best part? It works like magic.
+            Instead of <b>inflexible schedules</b> or <b>inconsistent <Link className="text-decoration-none" href="/tools/hearts">bragging boards</Link></b>, people do chores for points.
+            Everyone owes 100 points per month, and chores gain points the longer they go undone.
+            It really works, with over <b>2,000 chores</b> claimed to-date.
+          </p>
+
+          <p>
+            Stop fighting over dishes. <Link className="text-decoration-none" href={quickstartUrl}>Get started today.</Link> &#x2728;
           </p>
           <hr></hr>
         </Col>
@@ -60,7 +59,7 @@ export default function ({ images }) {
           <ul>
             <li>Dirty dishes</li>
             <li>Passive-aggressive notes</li>
-            <li>Feeling taken advantage of</li>
+            <li>Frustration and burnout</li>
             <li>Endless meetings</li>
           </ul>
         </Col>
@@ -69,7 +68,7 @@ export default function ({ images }) {
           <ul>
             <li>Clean sinks</li>
             <li>Communication and transparency</li>
-            <li>Feeling empowered and appreciated</li>
+            <li>Empowerment and appreciation</li>
             <li>Endless flexibility</li>
           </ul>
         </Col>
@@ -82,14 +81,6 @@ export default function ({ images }) {
           <Carousel images={images} height={800} alt="Chores screenshot" />
         </Col>
         <Col />
-      </Row>
-
-      <Row className="pb-4 center">
-        <Col>
-          <p style={{ fontSize: "1.5em" }}>
-            &#x1f449; <Link href={docsUrl}>Read the docs</Link> &#x1f448;
-          </p>
-        </Col>
       </Row>
     </Container>
   )

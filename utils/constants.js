@@ -8,7 +8,7 @@ export const blogUrl = "https://blog.zaratan.world"
 // Codebase
 export const repoUrl = "https://github.com/zaratanDotWorld/choreWheel";
 export const docsUrl = "https://docs.chorewheel.zaratan.world/";
-export const gettingStartedUrl = docsUrl + "en/latest/overview/getting-started.html";
+export const quickstartUrl = docsUrl + "en/latest/overview/getting-started.html";
 export const mailchimpUrl = "https://mailchi.mp/a69de84158a5/app-interest";
 
 export const choresInstallUrl = "https://chores.mirror.zaratan.world/slack/install";

@@ -7,7 +7,7 @@ import Carousel from '../../components/carousel';
 import SlackButton from '../../components/slack';
 
 import { getImages } from '../../utils/s3';
-import { docsUrl, thingsInstallUrl } from '../../utils/constants';
+import { quickstartUrl, thingsInstallUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/mirror\/framed-mobile-things.*\.jpg/i;
@@ -23,7 +23,7 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <Headpiece
               mainText="Things"
-              subText="Keep It Stocked"
+              subText="Shopping Made Easier"
               icon="&#x1f6d2;"
               color="blue"
             />
@@ -36,14 +36,15 @@ export default function ({ images }) {
       <Row className="accent-blue pt-5 px-5">
         <Col />
         <Col md={10} xl={6}>
-          <h5><b>Things is Zaratan's buying tool</b>, helping people manage shared funds.</h5>
+          <h5><b>Things is Chore Wheel's spending system</b>, helping people manage shared funds.</h5>
           <p>
-            Things lets folks co-create a list of shared staples that everyone uses.
-            When supplies run low, anyone can propose a "buy."
-            More expensive buys need more upvotes to be approved.
+            Things lets folks co-create a list of shared staples.
+            When supplies run low, anyone can buy more.&nbsp;
+            <b>Effortlessly keep things stocked</b>, without putting it all on one person.
           </p>
+
           <p>
-            Budgets are public, letting folks collectively set financial priorities.
+            Help your house run itself. <Link className="text-decoration-none" href={quickstartUrl}>Get started today.</Link> &#x2728;
           </p>
           <hr></hr>
         </Col>
@@ -77,14 +78,6 @@ export default function ({ images }) {
           <Carousel images={images} height={800} alt="Things screenshot" />
         </Col>
         <Col />
-      </Row>
-
-      <Row className="pb-4 center">
-        <Col>
-          <p style={{ fontSize: "1.5em" }}>
-            &#x1f449; <Link href={docsUrl}>Read the docs</Link> &#x1f448;
-          </p>
-        </Col>
       </Row>
     </Container>
   )

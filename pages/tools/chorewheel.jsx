@@ -10,7 +10,7 @@ import { getImages } from '../../utils/s3';
 import {
   repoUrl,
   docsUrl,
-  gettingStartedUrl,
+  quickstartUrl,
   metagovUrl,
   choreWheelUrl,
   structuresUrl,
@@ -44,7 +44,7 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
          <Headpiece
             mainText="Chore Wheel"
-            subText="Keep it Going"
+            subText="Community Made Easier"
             // icon="☀️"
             icon="&#x1F506;"
             color="blue"
@@ -52,7 +52,7 @@ export default function ({ images }) {
 
           <br></br>
           <p>Currently in <b>open beta</b></p>
-          <h5>&#x2728;&nbsp;<Link href={gettingStartedUrl}>Get started now!</Link>&nbsp;&#x2728;</h5>
+          <h5>&#x2728;&nbsp;<Link href={quickstartUrl}>Get started today</Link>&nbsp;&#x2728;</h5>
 
           <br></br>
 
@@ -64,32 +64,37 @@ export default function ({ images }) {
       <Row className="p-5 accent-blue">
         <Col />
         <Col md={8} xl={6}>
-          <h5><b>Chore Wheel</b> is <Link className="text-decoration-none" href={structuresUrl}>pioneering software for co-living</Link>, running on Slack.</h5>
+          <h5>
+            <b>Chore Wheel</b> is <Link className="text-decoration-none" href={structuresUrl}>pioneering software for coliving</Link>, helping communities thrive.
+          </h5>
+
           <hr></hr>
-          <p>Created by <b>economists</b> and <b>game designers</b>, Chore Wheel is a family of tools helping people share space:</p>
+          <p>
+            Created by <b>coliving veterans</b> and <b>game designers</b>, Chore Wheel is a family of <b>Slack apps</b> helping people share space:
+          </p>
           <ul>
             <li><b><Link className="text-decoration-none" href="/tools/chores">Chores</Link></b> for keeping it clean</li>
             <li><b><Link className="text-decoration-none" href="/tools/hearts">Hearts</Link></b> for mutual accountability</li>
-            <li><b><Link className="text-decoration-none" href="/tools/things">Things</Link></b> for bulk purchasing</li>
-            <li>And more to come</li>
+            <li><b><Link className="text-decoration-none" href="/tools/things">Things</Link></b> for group purchasing</li>
+            <li>And more to come...</li>
           </ul>
 
           <p>
-            Chore Wheel is <b>open-source</b> and <b>privacy-preserving</b>.
-            It contains <Link className="text-decoration-none" href={structuresUrl}>the latest thinking</Link> in <b>ethical technology</b>, with four core principles:
+            Designed for <b>intentional communities</b>, <b>casual roommates</b>, <b>cohabitating partners</b>, and everything in-between,
+            Chore Wheel helps people share the <b>emotional and mental labor</b> of sustaining communities.
+            Groups using Chore Wheel have <b>fewer meetings</b> and <b>less conflict</b>, leaving more time for what really matters.
           </p>
 
-          <ul>
-            <li>No managers or privileged roles</li>
-            <li>Simple and intuitive inputs</li>
-            <li>Humans for sensing, machines for bookkeeping</li>
-            <li>Always-on, asynchronous processes</li>
-          </ul>
+          <p>
+            <b>The best part? It's very easy to use. <Link className="text-decoration-none" href={quickstartUrl}>Get started today.</Link> &#x2728;</b>
+          </p>
 
           <p>
-            Development was supported by the&nbsp;
-            <b>Open-Source Software</b> (2x), <b>Governance Research</b>, and <b>Metacrisis</b> rounds of&nbsp;
-            <b><Link className="text-decoration-none" href="https://grants.gitcoin.co/">Gitcoin Grants</Link></b>.
+            <i>
+              Development of Chore Wheel was supported by the&nbsp;
+              <b>Open-Source Software</b> (2x), <b>Governance Research</b>, and <b>Metacrisis</b> rounds of&nbsp;
+              <b><Link className="text-decoration-none" href="https://grants.gitcoin.co/">Gitcoin Grants</Link></b>.
+            </i>
           </p>
 
           <div className="center">

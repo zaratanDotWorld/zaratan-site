@@ -50,13 +50,13 @@ export default function () {
             <b>Community</b> cannot be bought &#x2013;&nbsp;
             <b>Rules</b> can be simple &#x2013;&nbsp;
             <b>Work</b> should be valued &#x2013;&nbsp;
-            <b>Conservation</b> starts local.
+            <b>Conservation</b> starts locally.
           </p>
 
           <p>
-            We're looking for people who are <b>friendly, creative, and reliable</b>. We keep prices reasonable, and expect residents to help run their houses.
-            Meetings can be boring, so we made living here as easy as playing a game.
-            Embrace the responsibility, and this could be one of the best experiences of your life.
+            We're looking for people who are <b>friendly, creative, and reliable</b>.
+            We keep prices low, and ask residents to help run their houses.
+            Embrace the opportunity, and this could be one of the best experiences of your life.
           </p>
 
           <br></br>

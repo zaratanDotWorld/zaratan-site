@@ -7,7 +7,7 @@ import Carousel from '../../components/carousel';
 import SlackButton from '../../components/slack';
 
 import { getImages } from '../../utils/s3';
-import { docsUrl, heartsInstallUrl } from '../../utils/constants';
+import { quickstartUrl, heartsInstallUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/mirror\/framed-mobile-hearts.*\.jpg/i;
@@ -23,7 +23,7 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <Headpiece
               mainText="Hearts"
-              subText="Keep It Honest"
+              subText="Vibes Made Easier"
               icon="&#x1f496;"
               color="red"
             />
@@ -36,14 +36,14 @@ export default function ({ images }) {
       <Row className="accent-red pt-5 px-5">
         <Col />
         <Col md={10} xl={6}>
-          <h5><b>Hearts is Zaratan's accountability tool</b>, helping people establish mutual expectations and work through conflicts.</h5>
+          <h5><b>Hearts is Chore Wheel's accountability system</b>, helping people establish expectations, recognize contributions, and resolve conflicts.</h5>
           <p>
-            Hearts helps hold people accountable to shared commitments, while putting growth and forgiveness front-and-center.
-            When conflicts arise, and folks are unable to work things out amongst themselves, the system can support a fair resolution.
+            Hearts helps hold people accountable to shared commitments, while encouraging sponteneity, and centering personal growth.
+            Hearts <b>supercharges bragging boards</b>, and supports fair and transparent resolution to interpersonal conflicts.
           </p>
+
           <p>
-            People lose hearts for not doing chores, but earn them back over time.
-            You give good karma to folks going the extra mile, earning them bonus hearts.
+            Make accountability fun and easy. <Link className="text-decoration-none" href={quickstartUrl}>Get started today.</Link> &#x2728;
           </p>
           <hr></hr>
         </Col>
@@ -65,9 +65,9 @@ export default function ({ images }) {
           <h5>&#x1f929; New Way</h5>
           <ul>
             <li>Clear process</li>
-            <li>Respect and acknowledgment</li>
-            <li>Forgiveness over time</li>
-            <li>Feeling heard</li>
+            <li>Fun and engagement</li>
+            <li>Respect and validation</li>
+            <li>Feeling seen</li>
           </ul>
         </Col>
         <Col/>
@@ -79,14 +79,6 @@ export default function ({ images }) {
           <Carousel images={images} height={800} alt="Hearts screenshot" />
         </Col>
         <Col />
-      </Row>
-
-      <Row className="pb-4 center">
-        <Col>
-          <p style={{ fontSize: "1.5em" }}>
-            &#x1f449; <Link href={docsUrl}>Read the docs</Link> &#x1f448;
-          </p>
-        </Col>
       </Row>
     </Container>
   )

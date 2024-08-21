@@ -23,7 +23,7 @@ export default function ({ images }) {
         <Col md={8} xl={6}>
           <Headpiece
             mainText="Sage House"
-            subText="Find Your Place"
+            subText="The Turtle Palace"
             icon="&#x1FAB4;"
             color="red"
           />
