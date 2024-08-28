@@ -14,11 +14,11 @@ export default function () {
               <NavDropdown.Item href="/houses/sage">&#x1FAB4; Sage House</NavDropdown.Item>
               <NavDropdown.Item href="/houses/cactus">&#x1F335; Cactus Cottage</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Tools" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/tools/chorewheel">&#x1F506; Chore Wheel</NavDropdown.Item>
-              <NavDropdown.Item href="/tools/chores">&nbsp;&nbsp;&nbsp; &#x1f9e4; Chores</NavDropdown.Item>
-              <NavDropdown.Item href="/tools/hearts">&nbsp;&nbsp;&nbsp; &#x1f496; Hearts</NavDropdown.Item>
-              <NavDropdown.Item href="/tools/things">&nbsp;&nbsp;&nbsp; &#x1f6d2; Things</NavDropdown.Item>
+            <NavDropdown title="Chore Wheel" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/chorewheel">&#x1F506; Overview</NavDropdown.Item>
+              <NavDropdown.Item href="/chorewheel/chores">&nbsp; &#x1f9e4; Chores</NavDropdown.Item>
+              <NavDropdown.Item href="/chorewheel/hearts">&nbsp; &#x1f496; Hearts</NavDropdown.Item>
+              <NavDropdown.Item href="/chorewheel/things">&nbsp; &#x1f6d2; Things</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href={blogUrl}>Blog</Nav.Link>
           </Nav>

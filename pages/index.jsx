@@ -37,7 +37,7 @@ export default function () {
           <h5>
             Zaratan is an emerging coliving company in Los Angeles.
             We build <Link href="/houses/sage" className="text-decoration-none">physical houses</Link>
-            &nbsp;and <Link href="/tools/chorewheel" className="text-decoration-none">pioneering software tools</Link>.
+            &nbsp;and <Link href="/chorewheel" className="text-decoration-none">pioneering software tools</Link>.
           </h5>
           <h5>
             Our mission is the creation of beautiful and naturally-affordable housing through creative organization and adaptive reuse.

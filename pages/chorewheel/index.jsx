@@ -73,9 +73,9 @@ export default function ({ images }) {
             Created by <b>coliving veterans</b> and <b>game designers</b>, Chore Wheel is a family of <b>Slack apps</b> helping people share space:
           </p>
           <ul>
-            <li><b><Link className="text-decoration-none" href="/tools/chores">Chores</Link></b> for keeping it clean</li>
-            <li><b><Link className="text-decoration-none" href="/tools/hearts">Hearts</Link></b> for mutual accountability</li>
-            <li><b><Link className="text-decoration-none" href="/tools/things">Things</Link></b> for group purchasing</li>
+            <li><b><Link className="text-decoration-none" href="/chorewheel/chores">Chores</Link></b> for keeping it clean</li>
+            <li><b><Link className="text-decoration-none" href="/chorewheel/hearts">Hearts</Link></b> for mutual accountability</li>
+            <li><b><Link className="text-decoration-none" href="/chorewheel/things">Things</Link></b> for group purchasing</li>
             <li>And more to come...</li>
           </ul>
 
@@ -86,7 +86,7 @@ export default function ({ images }) {
           </p>
 
           <p>
-            <b>The best part? It's very easy to use. <Link className="text-decoration-none" href={quickstartUrl}>Get started today.</Link> &#x2728;</b>
+            <b>The best part? It's fun to use. <Link className="text-decoration-none" href={quickstartUrl}>Get started today.</Link> &#x2728;</b>
           </p>
 
           <p>

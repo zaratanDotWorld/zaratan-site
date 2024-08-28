@@ -39,7 +39,7 @@ export default function ({ images }) {
           <h5><b>Chores is Chore Wheel's chore system</b>, making dirty dishes and passive-aggressive sticky notes a thing of the past.</h5>
           <p>
             Chores helps folks spend less time doing chores, and less time talking about chores.
-            Instead of <b>inflexible schedules</b> or <b>inconsistent <Link className="text-decoration-none" href="/tools/hearts">bragging boards</Link></b>, people do chores for points.
+            Instead of <b>inflexible schedules</b> or <b>inconsistent <Link className="text-decoration-none" href="/chorewheel/hearts">bragging boards</Link></b>, people do chores for points.
             Everyone owes 100 points per month, and chores gain points the longer they go undone.
             It really works, with over <b>2,000 chores</b> claimed to-date.
           </p>
