@@ -1,12 +1,12 @@
 {
-  "name": "site",
+  "name": "website",
   "version": "0.1.0",
   "description": "Zaratan website",
-  "repository": "github@kronosapiens/zaratan-site",
+  "repository": "github@zaratanDotWorld/website",
   "author": "Daniel Kronovet (krono@zaratan.world)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/kronosapiens/zaratan-site#readme",
-  "bugs": "https://github.com/kronosapiens/zaratan-site/issues",
+  "homepage": "https://zaratan.world",
+  "bugs": "https://github.com/zaratanDotWorld/website/issues",
   "main": "pages/index.js",
   "scripts": {
     "dev": "next",

@@ -1,4 +1,4 @@
-# zaratan-site
+# website
 
 [Zaratan website](https://zaratan.world)
 
