@@ -27,6 +27,7 @@ export default function () {
           />
 
           <br></br>
+
           <SignupForm text="Get our newsletter" placeholder="~ email address ~" />
         </Col>
         <Col />
