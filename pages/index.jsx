@@ -44,7 +44,7 @@ export default function () {
             Our mission is the creation of beautiful and naturally-affordable housing through creative organization and adaptive reuse.
           </h5>
           <hr></hr>
-          <p>We believe that:</p>
+          <p><b>We believe that:</b></p>
           <p>
             <b>Housing</b> is not a luxury &#x2013;&nbsp;
             <b>Home</b> is a place of empowerment &#x2013;&nbsp;
@@ -60,6 +60,16 @@ export default function () {
             Embrace the opportunity, and this could be one of the best experiences of your life.
           </p>
 
+          <hr></hr>
+          <p><b>Next steps:</b></p>
+          <p>
+            If you are <b>looking for housing</b>, check out&nbsp;
+            <Link href="/houses/sage" className="text-decoration-none">Sage House</Link> or&nbsp;
+            <Link href="/houses/cactus" className="text-decoration-none">Cactus Cottage</Link>.
+          </p>
+          <p>
+            If you have housing, but <b>struggle with group dynamics</b>, check out <Link href="/chorewheel" className="text-decoration-none">Chore Wheel</Link>.
+          </p>
           <br></br>
           <Link href={instagramUrl}>
             <Image

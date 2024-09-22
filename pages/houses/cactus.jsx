@@ -6,7 +6,7 @@ import Carousel from '../../components/carousel';
 import Headpiece from '../../components/headpiece';
 
 import { getImages } from '../../utils/s3';
-import { applyUrl } from '../../utils/constants';
+import { applyUrl, tongvaUrl, instagramUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/cactus\/mls\/.*\.jpg/i;
@@ -60,7 +60,8 @@ export default function ({ images }) {
             and basement storage
             on-site.
           </p>
-          <p>A proud supporter of the  <Link href="https://tongva.networkforgood.com/">Tongva Conservancy</Link></p>
+          <p><b>Check our <Link href={instagramUrl}>Instagram</Link> for vacancy information.</b></p>
+          <p><i>A proud supporter of the <Link href={tongvaUrl}>Tongva Conservancy</Link></i></p>
         </Col>
         <Col />
       </Row>
@@ -68,7 +69,7 @@ export default function ({ images }) {
       <Row className="p-5">
         <Col />
         <Col md={8} xl={6}>
-          <Carousel images={images} height={500} alt="Sage House photo" />
+          <Carousel images={images} height={500} alt="Cactus Cottage photo" />
         </Col>
         <Col />
       </Row>

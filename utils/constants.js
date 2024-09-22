@@ -9,11 +9,15 @@ export const blogUrl = "https://blog.zaratan.world"
 export const repoUrl = "https://github.com/zaratanDotWorld/choreWheel";
 export const docsUrl = "https://docs.chorewheel.zaratan.world/";
 export const quickstartUrl = docsUrl + "en/latest/overview/getting-started.html";
-export const mailchimpUrl = "https://mailchi.mp/a69de84158a5/app-interest";
 
 export const choresInstallUrl = "https://chores.mirror.zaratan.world/slack/install";
 export const heartsInstallUrl = "https://hearts.mirror.zaratan.world/slack/install";
 export const thingsInstallUrl = "https://things.mirror.zaratan.world/slack/install";
+
+// Marketing
+export const mailchimpUrl = "https://mailchi.mp/a69de84158a5/app-interest";
+export const interestUrl = "https://forms.gle/Aeod1bNUq2sDoe2Q8";
+export const tongvaUrl = "https://tongva.land/";
 
 // Media
 const s3Root = "https://s3.amazonaws.com/zaratan.world/public/";

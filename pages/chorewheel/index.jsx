@@ -10,6 +10,7 @@ import { getImages } from '../../utils/s3';
 import {
   repoUrl,
   docsUrl,
+  interestUrl,
   quickstartUrl,
   metagovUrl,
   choreWheelUrl,
@@ -60,8 +61,9 @@ export default function ({ images }) {
 
           <br></br>
 
-          <h5>&#x2728;&nbsp;<Link href={quickstartUrl}>Get started today</Link>&nbsp;&#x2728;</h5>
+          <Button variant="outline-primary" size="md" href={quickstartUrl}>Get Started</Button>
 
+          <br></br>
           <br></br>
 
           <Video videoSrc={choreWheelUrl} videoType={"video/mp4"} />
@@ -95,6 +97,10 @@ export default function ({ images }) {
 
           <p>
             <b>The best part? It's fun to use. <Link className="text-decoration-none" href={quickstartUrl}>Get started today.</Link> &#x2728;</b>
+          </p>
+
+          <p>
+            Not sure if Chore Wheel is right for you? <Link href={interestUrl} className="text-decoration-none"><b>Fill out this form</b></Link> and someone will be in touch.
           </p>
 
           <p>

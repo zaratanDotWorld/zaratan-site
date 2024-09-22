@@ -7,7 +7,7 @@ import Headpiece from '../../components/headpiece';
 import Video from '../../components/video';
 
 import { getImages } from '../../utils/s3';
-import { applyUrl, nbcUrl, joysOfSageUrl, supernuclearUrl, structuresUrl } from '../../utils/constants';
+import { instagramUrl, tongvaUrl, applyUrl, nbcUrl, joysOfSageUrl, supernuclearUrl, structuresUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
   const regex = /public\/images\/sage\/mls\/.*\.jpg/i;
@@ -71,7 +71,8 @@ export default function ({ images }) {
               guest room,
               and four full bathrooms.
             </p>
-            <p>A proud supporter of the  <Link href="https://tongva.networkforgood.com/">Tongva Conservancy</Link></p>
+            <p><b>Check our <Link href={instagramUrl}>Instagram</Link> for vacancy information.</b></p>
+            <p><i>A proud supporter of the <Link href={tongvaUrl}>Tongva Conservancy</Link></i></p>
           </div>
 
           <br></br>
