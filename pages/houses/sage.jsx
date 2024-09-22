@@ -34,7 +34,7 @@ export default function ({ images }) {
             <p>
               <i>"This is the best living situation I've ever had"</i>
               <br></br>
-              <b>Haven Y.</b>
+              <b>- Haven Y.</b>
             </p>
             <br></br>
             <Button variant="outline-danger" size="md" href={applyUrl}>Apply Now</Button>

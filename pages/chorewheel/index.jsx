@@ -51,14 +51,15 @@ export default function ({ images }) {
           />
 
           <br></br>
+
           <p>
             <i>"Far more practical and functional than [what] I've experienced in group living before."</i>
             <br></br>
-            <b>Molly B.</b>
+            <b>- Molly B.</b>
           </p>
 
           <br></br>
-          <p>Currently in <b>open beta</b></p>
+
           <h5>&#x2728;&nbsp;<Link href={quickstartUrl}>Get started today</Link>&nbsp;&#x2728;</h5>
 
           <br></br>
