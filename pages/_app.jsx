@@ -12,13 +12,15 @@ export  default function ({ Component, pageProps }) {
   const fontsUrl = "https://fonts.googleapis.com/css" +
     "?family=EB+Garamond:400,700&display=swap";
 
+  const pageTitle = pageProps.pageTitle || "Zaratan Coliving";
+
   return (
     <div>
       <Analytics analyticsId='G-GC4C7YJ78Q' />
       <link href={fontsUrl} rel="stylesheet" />
 
       <Head>
-        <title>Zaratan</title>
+        <title>{pageTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

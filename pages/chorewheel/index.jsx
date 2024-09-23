@@ -21,15 +21,16 @@ import {
 } from '../../utils/constants';
 
 export async function getStaticProps() {
-  const regex = /public\/images\/mirror\/framed-mobile-.*\.jpg/i;
+  const pageTitle = "Chore Wheel";
 
+  const regex = /public\/images\/mirror\/framed-mobile-.*\.jpg/i;
   // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
   const images = (await getImages({ regex }))
     .map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value)
 
-  return { props: { images } }
+  return { props: { pageTitle, images } }
 }
 
 export default function ({ images }) {

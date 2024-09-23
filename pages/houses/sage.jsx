@@ -10,9 +10,11 @@ import { getImages } from '../../utils/s3';
 import { instagramUrl, tongvaUrl, applyUrl, nbcUrl, joysOfSageUrl, supernuclearUrl, structuresUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
+  const pageTitle = "Sage House";
+
   const regex = /public\/images\/sage\/mls\/.*\.jpg/i;
   const images = await getImages({ regex });
-  return { props: { images } }
+  return { props: { pageTitle, images } }
 }
 
 export default function ({ images }) {

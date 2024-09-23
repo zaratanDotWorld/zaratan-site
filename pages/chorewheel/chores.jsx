@@ -10,9 +10,11 @@ import { getImages } from '../../utils/s3';
 import { choresInstallUrl, quickstartUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
+  const pageTitle = "Chores";
+
   const regex = /public\/images\/mirror\/framed-mobile-chores.*\.jpg/i;
   const images = await getImages({ regex });
-  return { props: { images } }
+  return { props: { pageTitle, images } }
 }
 
 export default function ({ images }) {

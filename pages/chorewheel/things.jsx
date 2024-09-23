@@ -10,9 +10,11 @@ import { getImages } from '../../utils/s3';
 import { quickstartUrl, thingsInstallUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
+  const pageTitle = "Things";
+
   const regex = /public\/images\/mirror\/framed-mobile-things.*\.jpg/i;
   const images = await getImages({ regex });
-  return { props: { images } }
+  return { props: { pageTitle, images } }
 }
 
 export default function ({ images }) {

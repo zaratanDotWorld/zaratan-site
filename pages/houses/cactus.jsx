@@ -9,9 +9,11 @@ import { getImages } from '../../utils/s3';
 import { applyUrl, tongvaUrl, instagramUrl } from '../../utils/constants';
 
 export async function getStaticProps() {
+  const pageTitle = "Cactus Cottage";
+
   const regex = /public\/images\/cactus\/mls\/.*\.jpg/i;
   const images = await getImages({ regex });
-  return { props: { images } }
+  return { props: { pageTitle, images } }
 }
 
 export default function ({ images }) {
